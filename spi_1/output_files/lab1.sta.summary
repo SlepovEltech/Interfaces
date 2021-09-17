@@ -1,0 +1,117 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'QUARZ'
+Slack : -3.524
+TNS   : -67.774
+
+Type  : Slow Model Setup 't_1'
+Slack : -2.021
+TNS   : -4.446
+
+Type  : Slow Model Setup 'lpm_counter2:inst13|lpm_counter:LPM_COUNTER_component|cntr_bij:auto_generated|safe_q[0]'
+Slack : -0.531
+TNS   : -0.531
+
+Type  : Slow Model Setup 'lpm_counter0:inst|lpm_counter:LPM_COUNTER_component|cntr_92k:auto_generated|safe_q[0]'
+Slack : 3.119
+TNS   : 0.000
+
+Type  : Slow Model Hold 'lpm_counter0:inst|lpm_counter:LPM_COUNTER_component|cntr_92k:auto_generated|safe_q[0]'
+Slack : -4.382
+TNS   : -4.382
+
+Type  : Slow Model Hold 'QUARZ'
+Slack : -1.924
+TNS   : -23.444
+
+Type  : Slow Model Hold 'lpm_counter2:inst13|lpm_counter:LPM_COUNTER_component|cntr_bij:auto_generated|safe_q[0]'
+Slack : -0.267
+TNS   : -0.267
+
+Type  : Slow Model Hold 't_1'
+Slack : 0.758
+TNS   : 0.000
+
+Type  : Slow Model Recovery 't_1'
+Slack : -3.521
+TNS   : -3.521
+
+Type  : Slow Model Removal 't_1'
+Slack : 3.489
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'lpm_counter0:inst|lpm_counter:LPM_COUNTER_component|cntr_92k:auto_generated|safe_q[0]'
+Slack : -2.239
+TNS   : -8.466
+
+Type  : Slow Model Minimum Pulse Width 'QUARZ'
+Slack : -1.941
+TNS   : -31.621
+
+Type  : Slow Model Minimum Pulse Width 'lpm_counter2:inst13|lpm_counter:LPM_COUNTER_component|cntr_bij:auto_generated|safe_q[0]'
+Slack : -1.508
+TNS   : -4.080
+
+Type  : Slow Model Minimum Pulse Width 't_1'
+Slack : -0.742
+TNS   : -5.936
+
+Type  : Fast Model Setup 'QUARZ'
+Slack : -0.596
+TNS   : -10.319
+
+Type  : Fast Model Setup 't_1'
+Slack : -0.310
+TNS   : -0.310
+
+Type  : Fast Model Setup 'lpm_counter2:inst13|lpm_counter:LPM_COUNTER_component|cntr_bij:auto_generated|safe_q[0]'
+Slack : 0.337
+TNS   : 0.000
+
+Type  : Fast Model Setup 'lpm_counter0:inst|lpm_counter:LPM_COUNTER_component|cntr_92k:auto_generated|safe_q[0]'
+Slack : 1.373
+TNS   : 0.000
+
+Type  : Fast Model Hold 'lpm_counter0:inst|lpm_counter:LPM_COUNTER_component|cntr_92k:auto_generated|safe_q[0]'
+Slack : -1.520
+TNS   : -1.520
+
+Type  : Fast Model Hold 'QUARZ'
+Slack : -1.265
+TNS   : -15.366
+
+Type  : Fast Model Hold 'lpm_counter2:inst13|lpm_counter:LPM_COUNTER_component|cntr_bij:auto_generated|safe_q[0]'
+Slack : -0.113
+TNS   : -0.113
+
+Type  : Fast Model Hold 't_1'
+Slack : 0.247
+TNS   : 0.000
+
+Type  : Fast Model Recovery 't_1'
+Slack : -0.378
+TNS   : -0.378
+
+Type  : Fast Model Removal 't_1'
+Slack : 0.930
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'QUARZ'
+Slack : -1.380
+TNS   : -21.380
+
+Type  : Fast Model Minimum Pulse Width 'lpm_counter0:inst|lpm_counter:LPM_COUNTER_component|cntr_92k:auto_generated|safe_q[0]'
+Slack : -1.027
+TNS   : -2.162
+
+Type  : Fast Model Minimum Pulse Width 'lpm_counter2:inst13|lpm_counter:LPM_COUNTER_component|cntr_bij:auto_generated|safe_q[0]'
+Slack : -0.828
+TNS   : -1.656
+
+Type  : Fast Model Minimum Pulse Width 't_1'
+Slack : -0.500
+TNS   : -4.000
+
+------------------------------------------------------------
