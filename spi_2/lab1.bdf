@@ -40,7 +40,7 @@ applicable agreement for further details.
 	(input)
 	(rect -24 336 144 352)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "CODE[7..0]" (rect 5 0 63 12)(font "Arial" ))
+	(text "CODE[7..0]" (rect 5 0 62 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -145,7 +145,7 @@ applicable agreement for further details.
 		(pt 48 16)
 		(output)
 		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 32 7 46 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
 		(line (pt 39 16)(pt 48 16))
 	)
 	(drawing
@@ -170,7 +170,7 @@ applicable agreement for further details.
 		(pt 48 16)
 		(output)
 		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 32 7 46 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
 		(line (pt 39 16)(pt 48 16))
 	)
 	(drawing
@@ -216,7 +216,7 @@ applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "Q" (rect 45 20 50 32)(font "Courier New" (bold)))
-		(text "Q" (rect 43 20 47 32)(font "Courier New" (bold)))
+		(text "Q" (rect 43 20 48 32)(font "Courier New" (bold)))
 		(line (pt 52 24)(pt 64 24))
 	)
 	(drawing
@@ -266,7 +266,7 @@ applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "Q" (rect 45 20 50 32)(font "Courier New" (bold)))
-		(text "Q" (rect 43 20 47 32)(font "Courier New" (bold)))
+		(text "Q" (rect 43 20 48 32)(font "Courier New" (bold)))
 		(line (pt 52 24)(pt 64 24))
 	)
 	(drawing
@@ -316,7 +316,7 @@ applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "Q" (rect 45 20 50 32)(font "Courier New" (bold)))
-		(text "Q" (rect 43 20 47 32)(font "Courier New" (bold)))
+		(text "Q" (rect 43 20 48 32)(font "Courier New" (bold)))
 		(line (pt 52 24)(pt 64 24))
 	)
 	(drawing
@@ -345,7 +345,7 @@ applicable agreement for further details.
 		(pt 48 16)
 		(output)
 		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 32 7 46 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
 		(line (pt 39 16)(pt 48 16))
 	)
 	(drawing
@@ -615,32 +615,32 @@ applicable agreement for further details.
 )
 (symbol
 	(rect 184 144 328 224)
-	(text "lpm_counter2" (rect 24 0 116 16)(font "Arial" (font_size 10)))
+	(text "lpm_counter2" (rect 34 0 126 16)(font "Arial" (font_size 10)))
 	(text "inst13" (rect 8 64 37 76)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
 		(text "clock" (rect 0 0 29 14)(font "Arial" (font_size 8)))
-		(text "clock" (rect 26 24 55 38)(font "Arial" (font_size 8)))
+		(text "clock" (rect 26 25 55 39)(font "Arial" (font_size 8)))
 		(line (pt 0 32)(pt 16 32))
 	)
 	(port
 		(pt 144 64)
 		(output)
 		(text "cout" (rect 0 0 24 14)(font "Arial" (font_size 8)))
-		(text "cout" (rect 100 56 124 70)(font "Arial" (font_size 8)))
+		(text "cout" (rect 104 57 128 71)(font "Arial" (font_size 8)))
 		(line (pt 144 64)(pt 128 64))
 	)
 	(port
 		(pt 144 48)
 		(output)
 		(text "q[11..0]" (rect 0 0 42 14)(font "Arial" (font_size 8)))
-		(text "q[11..0]" (rect 82 40 124 54)(font "Arial" (font_size 8)))
+		(text "q[11..0]" (rect 90 41 132 55)(font "Arial" (font_size 8)))
 		(line (pt 144 48)(pt 128 48)(line_width 3))
 	)
 	(drawing
-		(text "modulus 64" (rect 62 29 118 41)(font "Arial" ))
-		(text "up counter" (rect 70 21 121 33)(font "Arial" ))
+		(text "modulus 64" (rect 80 30 136 42)(font "Arial" ))
+		(text "up counter" (rect 84 22 135 34)(font "Arial" ))
 		(line (pt 16 16)(pt 16 64))
 		(line (pt 16 16)(pt 128 16))
 		(line (pt 16 64)(pt 128 64))

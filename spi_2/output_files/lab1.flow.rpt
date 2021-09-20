@@ -1,6 +1,6 @@
 Flow report for lab1
-Sun Sep 19 08:48:09 2021
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Mon Sep 20 11:16:15 2021
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
 ---------------------
@@ -37,26 +37,26 @@ applicable agreement for further details.
 
 
 
-+--------------------------------------------------------------------------------------+
-; Flow Summary                                                                         ;
-+------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Sun Sep 19 08:48:09 2021           ;
-; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
-; Revision Name                      ; lab1                                            ;
-; Top-level Entity Name              ; lab1                                            ;
-; Family                             ; Cyclone II                                      ;
-; Device                             ; EP2C5Q208C8                                     ;
-; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 41 / 4,608 ( < 1 % )                            ;
-;     Total combinational functions  ; 41 / 4,608 ( < 1 % )                            ;
-;     Dedicated logic registers      ; 27 / 4,608 ( < 1 % )                            ;
-; Total registers                    ; 27                                              ;
-; Total pins                         ; 12 / 142 ( 8 % )                                ;
-; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 0 / 119,808 ( 0 % )                             ;
-; Embedded Multiplier 9-bit elements ; 0 / 26 ( 0 % )                                  ;
-; Total PLLs                         ; 0 / 2 ( 0 % )                                   ;
-+------------------------------------+-------------------------------------------------+
++---------------------------------------------------------------------------------------+
+; Flow Summary                                                                          ;
++------------------------------------+--------------------------------------------------+
+; Flow Status                        ; Successful - Mon Sep 20 11:16:15 2021            ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
+; Revision Name                      ; lab1                                             ;
+; Top-level Entity Name              ; lab1                                             ;
+; Family                             ; Cyclone II                                       ;
+; Device                             ; EP2C5Q208C8                                      ;
+; Timing Models                      ; Final                                            ;
+; Total logic elements               ; 41 / 4,608 ( < 1 % )                             ;
+;     Total combinational functions  ; 41 / 4,608 ( < 1 % )                             ;
+;     Dedicated logic registers      ; 27 / 4,608 ( < 1 % )                             ;
+; Total registers                    ; 27                                               ;
+; Total pins                         ; 12 / 142 ( 8 % )                                 ;
+; Total virtual pins                 ; 0                                                ;
+; Total memory bits                  ; 0 / 119,808 ( 0 % )                              ;
+; Embedded Multiplier 9-bit elements ; 0 / 26 ( 0 % )                                   ;
+; Total PLLs                         ; 0 / 2 ( 0 % )                                    ;
++------------------------------------+--------------------------------------------------+
 
 
 +-----------------------------------------+
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 09/19/2021 08:48:00 ;
+; Start date & time ; 09/20/2021 11:15:49 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; lab1                ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 127872481408164.163203048007516 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 128454783254018.163212574802796 ; --            ; --          ; --             ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                              ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                     ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)       ; <None>        ; --          ; --             ;
@@ -113,12 +113,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 4646 MB             ; 00:00:02                           ;
-; Fitter                    ; 00:00:01     ; 1.0                     ; 4797 MB             ; 00:00:02                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 4537 MB             ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4535 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4513 MB             ; 00:00:00                           ;
-; Total                     ; 00:00:06     ; --                      ; --                  ; 00:00:06                           ;
+; Analysis & Synthesis      ; 00:00:05     ; 1.0                     ; 4673 MB             ; 00:00:02                           ;
+; Fitter                    ; 00:00:05     ; 1.0                     ; 5017 MB             ; 00:00:03                           ;
+; Assembler                 ; 00:00:04     ; 1.0                     ; 4576 MB             ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:04     ; 1.0                     ; 4579 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4541 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:20     ; --                      ; --                  ; 00:00:08                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -127,11 +127,11 @@ applicable agreement for further details.
 +---------------------------+------------------+-----------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; LAPTOP-IV5VUULA  ; Windows 7 ; 6.2        ; x86_64         ;
-; Fitter                    ; LAPTOP-IV5VUULA  ; Windows 7 ; 6.2        ; x86_64         ;
-; Assembler                 ; LAPTOP-IV5VUULA  ; Windows 7 ; 6.2        ; x86_64         ;
-; TimeQuest Timing Analyzer ; LAPTOP-IV5VUULA  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; LAPTOP-IV5VUULA  ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; Chip-06          ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; Chip-06          ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; Chip-06          ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; Chip-06          ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; Chip-06          ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 

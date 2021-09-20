@@ -1,6 +1,6 @@
 Assembler report for lab1
-Fri Sep 17 23:29:14 2021
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Mon Sep 20 11:07:10 2021
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
 ---------------------
@@ -10,8 +10,8 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/79616/Documents/ETU/Interfaces/spi/output_files/lab1.sof
-  6. Assembler Device Options: C:/Users/79616/Documents/ETU/Interfaces/spi/output_files/lab1.pof
+  5. Assembler Device Options: F:/Interfaces-main/spi_1/output_files/lab1.sof
+  6. Assembler Device Options: F:/Interfaces-main/spi_1/output_files/lab1.pof
   7. Assembler Messages
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Fri Sep 17 23:29:14 2021 ;
+; Assembler Status      ; Successful - Mon Sep 20 11:07:10 2021 ;
 ; Revision Name         ; lab1                                  ;
 ; Top-level Entity Name ; lab1                                  ;
 ; Family                ; Cyclone II                            ;
@@ -78,37 +78,37 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
-+-------------------------------------------------------------------+
-; Assembler Generated Files                                         ;
-+-------------------------------------------------------------------+
-; File Name                                                         ;
-+-------------------------------------------------------------------+
-; C:/Users/79616/Documents/ETU/Interfaces/spi/output_files/lab1.sof ;
-; C:/Users/79616/Documents/ETU/Interfaces/spi/output_files/lab1.pof ;
-+-------------------------------------------------------------------+
++------------------------------------------------+
+; Assembler Generated Files                      ;
++------------------------------------------------+
+; File Name                                      ;
++------------------------------------------------+
+; F:/Interfaces-main/spi_1/output_files/lab1.sof ;
+; F:/Interfaces-main/spi_1/output_files/lab1.pof ;
++------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/79616/Documents/ETU/Interfaces/spi/output_files/lab1.sof ;
-+----------------+----------------------------------------------------------------------------+
-; Option         ; Setting                                                                    ;
-+----------------+----------------------------------------------------------------------------+
-; Device         ; EP2C5Q208C8                                                                ;
-; JTAG usercode  ; 0x00079024                                                                 ;
-; Checksum       ; 0x00079024                                                                 ;
-+----------------+----------------------------------------------------------------------------+
++--------------------------------------------------------------------------+
+; Assembler Device Options: F:/Interfaces-main/spi_1/output_files/lab1.sof ;
++----------------+---------------------------------------------------------+
+; Option         ; Setting                                                 ;
++----------------+---------------------------------------------------------+
+; Device         ; EP2C5Q208C8                                             ;
+; JTAG usercode  ; 0x00079CE6                                              ;
+; Checksum       ; 0x00079CE6                                              ;
++----------------+---------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/79616/Documents/ETU/Interfaces/spi/output_files/lab1.pof ;
-+--------------------+------------------------------------------------------------------------+
-; Option             ; Setting                                                                ;
-+--------------------+------------------------------------------------------------------------+
-; Device             ; EPCS1                                                                  ;
-; JTAG usercode      ; 0x00000000                                                             ;
-; Checksum           ; 0x01584AA8                                                             ;
-; Compression Ratio  ; 3                                                                      ;
-+--------------------+------------------------------------------------------------------------+
++--------------------------------------------------------------------------+
+; Assembler Device Options: F:/Interfaces-main/spi_1/output_files/lab1.pof ;
++--------------------+-----------------------------------------------------+
+; Option             ; Setting                                             ;
++--------------------+-----------------------------------------------------+
+; Device             ; EPCS1                                               ;
+; JTAG usercode      ; 0x00000000                                          ;
+; Checksum           ; 0x015828C4                                          ;
+; Compression Ratio  ; 3                                                   ;
++--------------------+-----------------------------------------------------+
 
 
 +--------------------+
@@ -116,15 +116,15 @@ applicable agreement for further details.
 +--------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
-    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Sep 17 23:29:14 2021
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+    Info: Processing started: Mon Sep 20 11:07:07 2021
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off lab1 -c lab1
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4537 megabytes
-    Info: Processing ended: Fri Sep 17 23:29:14 2021
-    Info: Elapsed time: 00:00:00
+    Info: Peak virtual memory: 4576 megabytes
+    Info: Processing ended: Mon Sep 20 11:07:10 2021
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:01
 
 

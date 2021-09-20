@@ -1,6 +1,6 @@
 Analysis & Synthesis report for lab1
-Fri Sep 17 23:29:11 2021
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Mon Sep 20 11:06:59 2021
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
 ---------------------
@@ -44,24 +44,24 @@ applicable agreement for further details.
 
 
 
-+--------------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                         ;
-+------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Sep 17 23:29:11 2021           ;
-; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
-; Revision Name                      ; lab1                                            ;
-; Top-level Entity Name              ; lab1                                            ;
-; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 40                                              ;
-;     Total combinational functions  ; 40                                              ;
-;     Dedicated logic registers      ; 26                                              ;
-; Total registers                    ; 26                                              ;
-; Total pins                         ; 12                                              ;
-; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 0                                               ;
-; Embedded Multiplier 9-bit elements ; 0                                               ;
-; Total PLLs                         ; 0                                               ;
-+------------------------------------+-------------------------------------------------+
++---------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                          ;
++------------------------------------+--------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Mon Sep 20 11:06:59 2021            ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
+; Revision Name                      ; lab1                                             ;
+; Top-level Entity Name              ; lab1                                             ;
+; Family                             ; Cyclone II                                       ;
+; Total logic elements               ; 43                                               ;
+;     Total combinational functions  ; 43                                               ;
+;     Dedicated logic registers      ; 28                                               ;
+; Total registers                    ; 28                                               ;
+; Total pins                         ; 12                                               ;
+; Total virtual pins                 ; 0                                                ;
+; Total memory bits                  ; 0                                                ;
+; Embedded Multiplier 9-bit elements ; 0                                                ;
+; Total PLLs                         ; 0                                                ;
++------------------------------------+--------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------+
@@ -149,50 +149,56 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 
 
-Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
-+-------------------------------------+
-; Parallel Compilation                ;
-+----------------------------+--------+
-; Processors                 ; Number ;
-+----------------------------+--------+
-; Number detected on machine ; 12     ;
-; Maximum allowed            ; 1      ;
-+----------------------------+--------+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 2           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
++----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                        ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                              ; Library ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------+---------+
-; lab1.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/79616/Documents/ETU/Interfaces/spi/lab1.bdf                      ;         ;
-; lpm_constant0.vhd                ; yes             ; User Wizard-Generated File         ; C:/Users/79616/Documents/ETU/Interfaces/spi/lpm_constant0.vhd             ;         ;
-; lpm_mux0.vhd                     ; yes             ; User Wizard-Generated File         ; C:/Users/79616/Documents/ETU/Interfaces/spi/lpm_mux0.vhd                  ;         ;
-; lpm_counter1.vhd                 ; yes             ; User Wizard-Generated File         ; C:/Users/79616/Documents/ETU/Interfaces/spi/lpm_counter1.vhd              ;         ;
-; lpm_counter2.vhd                 ; yes             ; User Wizard-Generated File         ; C:/Users/79616/Documents/ETU/Interfaces/spi/lpm_counter2.vhd              ;         ;
-; lpm_constant.tdf                 ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_constant.tdf        ;         ;
-; lpm_counter0.vhd                 ; yes             ; Auto-Found Wizard-Generated File   ; C:/Users/79616/Documents/ETU/Interfaces/spi/lpm_counter0.vhd              ;         ;
-; lpm_counter.tdf                  ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_counter.tdf         ;         ;
-; lpm_constant.inc                 ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_constant.inc        ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_decode.inc          ;         ;
-; lpm_add_sub.inc                  ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_add_sub.inc         ;         ;
-; cmpconst.inc                     ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/cmpconst.inc            ;         ;
-; lpm_compare.inc                  ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_compare.inc         ;         ;
-; lpm_counter.inc                  ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_counter.inc         ;         ;
-; dffeea.inc                       ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/dffeea.inc              ;         ;
-; alt_counter_stratix.inc          ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/alt_counter_stratix.inc ;         ;
-; aglobal130.inc                   ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc          ;         ;
-; db/cntr_92k.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/79616/Documents/ETU/Interfaces/spi/db/cntr_92k.tdf               ;         ;
-; db/cmpr_ccc.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/79616/Documents/ETU/Interfaces/spi/db/cmpr_ccc.tdf               ;         ;
-; db/cntr_bij.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/79616/Documents/ETU/Interfaces/spi/db/cntr_bij.tdf               ;         ;
-; db/cmpr_ndc.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/79616/Documents/ETU/Interfaces/spi/db/cmpr_ndc.tdf               ;         ;
-; lpm_mux.tdf                      ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.tdf             ;         ;
-; muxlut.inc                       ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/muxlut.inc              ;         ;
-; bypassff.inc                     ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/bypassff.inc            ;         ;
-; altshift.inc                     ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altshift.inc            ;         ;
-; db/mux_83e.tdf                   ; yes             ; Auto-Generated Megafunction        ; C:/Users/79616/Documents/ETU/Interfaces/spi/db/mux_83e.tdf                ;         ;
-; db/cntr_nkh.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/79616/Documents/ETU/Interfaces/spi/db/cntr_nkh.tdf               ;         ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                            ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                  ; Library ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------+---------+
+; lab1.bdf                         ; yes             ; User Block Diagram/Schematic File  ; F:/Interfaces-main/spi_1/lab1.bdf                                             ;         ;
+; lpm_constant0.vhd                ; yes             ; User Wizard-Generated File         ; F:/Interfaces-main/spi_1/lpm_constant0.vhd                                    ;         ;
+; lpm_mux0.vhd                     ; yes             ; User Wizard-Generated File         ; F:/Interfaces-main/spi_1/lpm_mux0.vhd                                         ;         ;
+; lpm_counter1.vhd                 ; yes             ; User Wizard-Generated File         ; F:/Interfaces-main/spi_1/lpm_counter1.vhd                                     ;         ;
+; lpm_counter2.vhd                 ; yes             ; User Wizard-Generated File         ; F:/Interfaces-main/spi_1/lpm_counter2.vhd                                     ;         ;
+; lpm_constant.tdf                 ; yes             ; Megafunction                       ; e:/cad/altera/13.0sp1/quartus/libraries/megafunctions/lpm_constant.tdf        ;         ;
+; lpm_counter0.vhd                 ; yes             ; Auto-Found Wizard-Generated File   ; F:/Interfaces-main/spi_1/lpm_counter0.vhd                                     ;         ;
+; lpm_counter.tdf                  ; yes             ; Megafunction                       ; e:/cad/altera/13.0sp1/quartus/libraries/megafunctions/lpm_counter.tdf         ;         ;
+; lpm_constant.inc                 ; yes             ; Megafunction                       ; e:/cad/altera/13.0sp1/quartus/libraries/megafunctions/lpm_constant.inc        ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                       ; e:/cad/altera/13.0sp1/quartus/libraries/megafunctions/lpm_decode.inc          ;         ;
+; lpm_add_sub.inc                  ; yes             ; Megafunction                       ; e:/cad/altera/13.0sp1/quartus/libraries/megafunctions/lpm_add_sub.inc         ;         ;
+; cmpconst.inc                     ; yes             ; Megafunction                       ; e:/cad/altera/13.0sp1/quartus/libraries/megafunctions/cmpconst.inc            ;         ;
+; lpm_compare.inc                  ; yes             ; Megafunction                       ; e:/cad/altera/13.0sp1/quartus/libraries/megafunctions/lpm_compare.inc         ;         ;
+; lpm_counter.inc                  ; yes             ; Megafunction                       ; e:/cad/altera/13.0sp1/quartus/libraries/megafunctions/lpm_counter.inc         ;         ;
+; dffeea.inc                       ; yes             ; Megafunction                       ; e:/cad/altera/13.0sp1/quartus/libraries/megafunctions/dffeea.inc              ;         ;
+; alt_counter_stratix.inc          ; yes             ; Megafunction                       ; e:/cad/altera/13.0sp1/quartus/libraries/megafunctions/alt_counter_stratix.inc ;         ;
+; aglobal130.inc                   ; yes             ; Megafunction                       ; e:/cad/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc          ;         ;
+; db/cntr_u4k.tdf                  ; yes             ; Auto-Generated Megafunction        ; F:/Interfaces-main/spi_1/db/cntr_u4k.tdf                                      ;         ;
+; db/cmpr_ldc.tdf                  ; yes             ; Auto-Generated Megafunction        ; F:/Interfaces-main/spi_1/db/cmpr_ldc.tdf                                      ;         ;
+; db/cntr_aij.tdf                  ; yes             ; Auto-Generated Megafunction        ; F:/Interfaces-main/spi_1/db/cntr_aij.tdf                                      ;         ;
+; db/cmpr_ndc.tdf                  ; yes             ; Auto-Generated Megafunction        ; F:/Interfaces-main/spi_1/db/cmpr_ndc.tdf                                      ;         ;
+; lpm_mux.tdf                      ; yes             ; Megafunction                       ; e:/cad/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.tdf             ;         ;
+; muxlut.inc                       ; yes             ; Megafunction                       ; e:/cad/altera/13.0sp1/quartus/libraries/megafunctions/muxlut.inc              ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                       ; e:/cad/altera/13.0sp1/quartus/libraries/megafunctions/bypassff.inc            ;         ;
+; altshift.inc                     ; yes             ; Megafunction                       ; e:/cad/altera/13.0sp1/quartus/libraries/megafunctions/altshift.inc            ;         ;
+; db/mux_83e.tdf                   ; yes             ; Auto-Generated Megafunction        ; F:/Interfaces-main/spi_1/db/mux_83e.tdf                                       ;         ;
+; db/cntr_nkh.tdf                  ; yes             ; Auto-Generated Megafunction        ; F:/Interfaces-main/spi_1/db/cntr_nkh.tdf                                      ;         ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -200,28 +206,28 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 40    ;
+; Estimated Total logic elements              ; 43    ;
 ;                                             ;       ;
-; Total combinational functions               ; 40    ;
+; Total combinational functions               ; 43    ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 10    ;
-;     -- 3 input functions                    ; 2     ;
-;     -- <=2 input functions                  ; 28    ;
+;     -- 4 input functions                    ; 11    ;
+;     -- 3 input functions                    ; 1     ;
+;     -- <=2 input functions                  ; 31    ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 18    ;
-;     -- arithmetic mode                      ; 22    ;
+;     -- normal mode                          ; 19    ;
+;     -- arithmetic mode                      ; 24    ;
 ;                                             ;       ;
-; Total registers                             ; 26    ;
-;     -- Dedicated logic registers            ; 26    ;
+; Total registers                             ; 28    ;
+;     -- Dedicated logic registers            ; 28    ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
 ; I/O pins                                    ; 12    ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ; Maximum fan-out node                        ; ~GND  ;
-; Maximum fan-out                             ; 20    ;
-; Total fan-out                               ; 197   ;
-; Average fan-out                             ; 2.53  ;
+; Maximum fan-out                             ; 22    ;
+; Total fan-out                               ; 214   ;
+; Average fan-out                             ; 2.58  ;
 +---------------------------------------------+-------+
 
 
@@ -230,18 +236,18 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                ; Library Name ;
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------+--------------+
-; |lab1                                     ; 40 (3)            ; 26 (3)       ; 0           ; 0            ; 0       ; 0         ; 12   ; 0            ; |lab1                                                                                              ; work         ;
-;    |lpm_counter0:inst|                    ; 12 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab1|lpm_counter0:inst                                                                            ; work         ;
-;       |lpm_counter:LPM_COUNTER_component| ; 12 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab1|lpm_counter0:inst|lpm_counter:LPM_COUNTER_component                                          ; work         ;
-;          |cntr_92k:auto_generated|        ; 12 (10)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab1|lpm_counter0:inst|lpm_counter:LPM_COUNTER_component|cntr_92k:auto_generated                  ; work         ;
-;             |cmpr_ccc:cmpr2|              ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab1|lpm_counter0:inst|lpm_counter:LPM_COUNTER_component|cntr_92k:auto_generated|cmpr_ccc:cmpr2   ; work         ;
+; |lab1                                     ; 43 (3)            ; 28 (3)       ; 0           ; 0            ; 0       ; 0         ; 12   ; 0            ; |lab1                                                                                              ; work         ;
+;    |lpm_counter0:inst|                    ; 15 (0)            ; 10 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab1|lpm_counter0:inst                                                                            ; work         ;
+;       |lpm_counter:LPM_COUNTER_component| ; 15 (0)            ; 10 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab1|lpm_counter0:inst|lpm_counter:LPM_COUNTER_component                                          ; work         ;
+;          |cntr_u4k:auto_generated|        ; 15 (12)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab1|lpm_counter0:inst|lpm_counter:LPM_COUNTER_component|cntr_u4k:auto_generated                  ; work         ;
+;             |cmpr_ldc:cmpr2|              ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab1|lpm_counter0:inst|lpm_counter:LPM_COUNTER_component|cntr_u4k:auto_generated|cmpr_ldc:cmpr2   ; work         ;
 ;    |lpm_counter1:inst9|                   ; 3 (0)             ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab1|lpm_counter1:inst9                                                                           ; work         ;
 ;       |lpm_counter:LPM_COUNTER_component| ; 3 (0)             ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab1|lpm_counter1:inst9|lpm_counter:LPM_COUNTER_component                                         ; work         ;
 ;          |cntr_nkh:auto_generated|        ; 3 (3)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab1|lpm_counter1:inst9|lpm_counter:LPM_COUNTER_component|cntr_nkh:auto_generated                 ; work         ;
 ;    |lpm_counter2:inst13|                  ; 17 (0)            ; 12 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab1|lpm_counter2:inst13                                                                          ; work         ;
 ;       |lpm_counter:LPM_COUNTER_component| ; 17 (0)            ; 12 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab1|lpm_counter2:inst13|lpm_counter:LPM_COUNTER_component                                        ; work         ;
-;          |cntr_bij:auto_generated|        ; 17 (14)           ; 12 (12)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab1|lpm_counter2:inst13|lpm_counter:LPM_COUNTER_component|cntr_bij:auto_generated                ; work         ;
-;             |cmpr_ndc:cmpr2|              ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab1|lpm_counter2:inst13|lpm_counter:LPM_COUNTER_component|cntr_bij:auto_generated|cmpr_ndc:cmpr2 ; work         ;
+;          |cntr_aij:auto_generated|        ; 17 (14)           ; 12 (12)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab1|lpm_counter2:inst13|lpm_counter:LPM_COUNTER_component|cntr_aij:auto_generated                ; work         ;
+;             |cmpr_ndc:cmpr2|              ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab1|lpm_counter2:inst13|lpm_counter:LPM_COUNTER_component|cntr_aij:auto_generated|cmpr_ndc:cmpr2 ; work         ;
 ;    |lpm_mux0:inst8|                       ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab1|lpm_mux0:inst8                                                                               ; work         ;
 ;       |lpm_mux:LPM_MUX_component|         ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab1|lpm_mux0:inst8|lpm_mux:LPM_MUX_component                                                     ; work         ;
 ;          |mux_83e:auto_generated|         ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab1|lpm_mux0:inst8|lpm_mux:LPM_MUX_component|mux_83e:auto_generated                              ; work         ;
@@ -249,17 +255,17 @@ Parallel compilation was disabled, but you have multiple processors available. E
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis IP Cores Summary                                                                                                                     ;
-+--------+--------------+---------+--------------+--------------+---------------------------+---------------------------------------------------------------+
-; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance           ; IP Include File                                               ;
-+--------+--------------+---------+--------------+--------------+---------------------------+---------------------------------------------------------------+
-; Altera ; LPM_COUNTER  ; N/A     ; N/A          ; N/A          ; |lab1|lpm_counter0:inst   ; C:/Users/79616/Documents/ETU/Interfaces/spi/lpm_counter0.vhd  ;
-; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |lab1|lpm_mux0:inst8      ; C:/Users/79616/Documents/ETU/Interfaces/spi/lpm_mux0.vhd      ;
-; Altera ; LPM_COUNTER  ; 13.0    ; N/A          ; N/A          ; |lab1|lpm_counter1:inst9  ; C:/Users/79616/Documents/ETU/Interfaces/spi/lpm_counter1.vhd  ;
-; Altera ; LPM_COUNTER  ; 13.0    ; N/A          ; N/A          ; |lab1|lpm_counter2:inst13 ; C:/Users/79616/Documents/ETU/Interfaces/spi/lpm_counter2.vhd  ;
-; Altera ; LPM_CONSTANT ; 13.0    ; N/A          ; N/A          ; |lab1|lpm_constant0:instt ; C:/Users/79616/Documents/ETU/Interfaces/spi/lpm_constant0.vhd ;
-+--------+--------------+---------+--------------+--------------+---------------------------+---------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                  ;
++--------+--------------+---------+--------------+--------------+---------------------------+--------------------------------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance           ; IP Include File                            ;
++--------+--------------+---------+--------------+--------------+---------------------------+--------------------------------------------+
+; Altera ; LPM_COUNTER  ; N/A     ; N/A          ; N/A          ; |lab1|lpm_counter0:inst   ; F:/Interfaces-main/spi_1/lpm_counter0.vhd  ;
+; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |lab1|lpm_mux0:inst8      ; F:/Interfaces-main/spi_1/lpm_mux0.vhd      ;
+; Altera ; LPM_COUNTER  ; 13.0    ; N/A          ; N/A          ; |lab1|lpm_counter1:inst9  ; F:/Interfaces-main/spi_1/lpm_counter1.vhd  ;
+; Altera ; LPM_COUNTER  ; 13.0    ; N/A          ; N/A          ; |lab1|lpm_counter2:inst13 ; F:/Interfaces-main/spi_1/lpm_counter2.vhd  ;
+; Altera ; LPM_CONSTANT ; 13.0    ; N/A          ; N/A          ; |lab1|lpm_constant0:instt ; F:/Interfaces-main/spi_1/lpm_constant0.vhd ;
++--------+--------------+---------+--------------+--------------+---------------------------+--------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -267,12 +273,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 26    ;
+; Total registers                              ; 28    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 20    ;
+; Number of registers using Synchronous Load   ; 22    ;
 ; Number of registers using Asynchronous Clear ; 1     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 8     ;
+; Number of registers using Clock Enable       ; 10    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -299,9 +305,9 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                              ;
 ; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                              ;
 ; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                            ;
-; LPM_WIDTH              ; 8           ; Signed Integer                                            ;
+; LPM_WIDTH              ; 10          ; Signed Integer                                            ;
 ; LPM_DIRECTION          ; UP          ; Untyped                                                   ;
-; LPM_MODULUS            ; 8           ; Signed Integer                                            ;
+; LPM_MODULUS            ; 40          ; Signed Integer                                            ;
 ; LPM_AVALUE             ; UNUSED      ; Untyped                                                   ;
 ; LPM_SVALUE             ; UNUSED      ; Untyped                                                   ;
 ; LPM_PORT_UPDOWN        ; PORT_UNUSED ; Untyped                                                   ;
@@ -312,7 +318,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; CARRY_CNT_EN           ; SMART       ; Untyped                                                   ;
 ; LABWIDE_SCLR           ; ON          ; Untyped                                                   ;
 ; USE_NEW_VERSION        ; TRUE        ; Untyped                                                   ;
-; CBXI_PARAMETER         ; cntr_92k    ; Untyped                                                   ;
+; CBXI_PARAMETER         ; cntr_u4k    ; Untyped                                                   ;
 +------------------------+-------------+-----------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -328,7 +334,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                              ;
 ; LPM_WIDTH              ; 12          ; Signed Integer                                              ;
 ; LPM_DIRECTION          ; UP          ; Untyped                                                     ;
-; LPM_MODULUS            ; 128         ; Signed Integer                                              ;
+; LPM_MODULUS            ; 640         ; Signed Integer                                              ;
 ; LPM_AVALUE             ; UNUSED      ; Untyped                                                     ;
 ; LPM_SVALUE             ; UNUSED      ; Untyped                                                     ;
 ; LPM_PORT_UPDOWN        ; PORT_UNUSED ; Untyped                                                     ;
@@ -339,7 +345,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; CARRY_CNT_EN           ; SMART       ; Untyped                                                     ;
 ; LABWIDE_SCLR           ; ON          ; Untyped                                                     ;
 ; USE_NEW_VERSION        ; TRUE        ; Untyped                                                     ;
-; CBXI_PARAMETER         ; cntr_bij    ; Untyped                                                     ;
+; CBXI_PARAMETER         ; cntr_aij    ; Untyped                                                     ;
 +------------------------+-------------+-------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -395,7 +401,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -404,10 +410,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
-    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Sep 17 23:29:09 2021
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+    Info: Processing started: Mon Sep 20 11:06:53 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab1 -c lab1
-Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file lab1.bdf
     Info (12023): Found entity 1: lab1
 Info (12021): Found 2 design units, including 1 entities, in source file lpm_constant0.vhd
@@ -439,31 +445,31 @@ Info (12128): Elaborating entity "lpm_counter" for hierarchy "lpm_counter0:inst|
 Info (12130): Elaborated megafunction instantiation "lpm_counter0:inst|lpm_counter:LPM_COUNTER_component"
 Info (12133): Instantiated megafunction "lpm_counter0:inst|lpm_counter:LPM_COUNTER_component" with the following parameter:
     Info (12134): Parameter "lpm_direction" = "UP"
-    Info (12134): Parameter "lpm_modulus" = "8"
+    Info (12134): Parameter "lpm_modulus" = "40"
     Info (12134): Parameter "lpm_port_updown" = "PORT_UNUSED"
     Info (12134): Parameter "lpm_type" = "LPM_COUNTER"
-    Info (12134): Parameter "lpm_width" = "8"
-Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_92k.tdf
-    Info (12023): Found entity 1: cntr_92k
-Info (12128): Elaborating entity "cntr_92k" for hierarchy "lpm_counter0:inst|lpm_counter:LPM_COUNTER_component|cntr_92k:auto_generated"
-Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_ccc.tdf
-    Info (12023): Found entity 1: cmpr_ccc
-Info (12128): Elaborating entity "cmpr_ccc" for hierarchy "lpm_counter0:inst|lpm_counter:LPM_COUNTER_component|cntr_92k:auto_generated|cmpr_ccc:cmpr2"
+    Info (12134): Parameter "lpm_width" = "10"
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_u4k.tdf
+    Info (12023): Found entity 1: cntr_u4k
+Info (12128): Elaborating entity "cntr_u4k" for hierarchy "lpm_counter0:inst|lpm_counter:LPM_COUNTER_component|cntr_u4k:auto_generated"
+Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_ldc.tdf
+    Info (12023): Found entity 1: cmpr_ldc
+Info (12128): Elaborating entity "cmpr_ldc" for hierarchy "lpm_counter0:inst|lpm_counter:LPM_COUNTER_component|cntr_u4k:auto_generated|cmpr_ldc:cmpr2"
 Info (12128): Elaborating entity "lpm_counter2" for hierarchy "lpm_counter2:inst13"
 Info (12128): Elaborating entity "lpm_counter" for hierarchy "lpm_counter2:inst13|lpm_counter:LPM_COUNTER_component"
 Info (12130): Elaborated megafunction instantiation "lpm_counter2:inst13|lpm_counter:LPM_COUNTER_component"
 Info (12133): Instantiated megafunction "lpm_counter2:inst13|lpm_counter:LPM_COUNTER_component" with the following parameter:
     Info (12134): Parameter "lpm_direction" = "UP"
-    Info (12134): Parameter "lpm_modulus" = "128"
+    Info (12134): Parameter "lpm_modulus" = "640"
     Info (12134): Parameter "lpm_port_updown" = "PORT_UNUSED"
     Info (12134): Parameter "lpm_type" = "LPM_COUNTER"
     Info (12134): Parameter "lpm_width" = "12"
-Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_bij.tdf
-    Info (12023): Found entity 1: cntr_bij
-Info (12128): Elaborating entity "cntr_bij" for hierarchy "lpm_counter2:inst13|lpm_counter:LPM_COUNTER_component|cntr_bij:auto_generated"
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_aij.tdf
+    Info (12023): Found entity 1: cntr_aij
+Info (12128): Elaborating entity "cntr_aij" for hierarchy "lpm_counter2:inst13|lpm_counter:LPM_COUNTER_component|cntr_aij:auto_generated"
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_ndc.tdf
     Info (12023): Found entity 1: cmpr_ndc
-Info (12128): Elaborating entity "cmpr_ndc" for hierarchy "lpm_counter2:inst13|lpm_counter:LPM_COUNTER_component|cntr_bij:auto_generated|cmpr_ndc:cmpr2"
+Info (12128): Elaborating entity "cmpr_ndc" for hierarchy "lpm_counter2:inst13|lpm_counter:LPM_COUNTER_component|cntr_aij:auto_generated|cmpr_ndc:cmpr2"
 Info (12128): Elaborating entity "lpm_mux0" for hierarchy "lpm_mux0:inst8"
 Info (12128): Elaborating entity "LPM_MUX" for hierarchy "lpm_mux0:inst8|LPM_MUX:LPM_MUX_component"
 Info (12130): Elaborated megafunction instantiation "lpm_mux0:inst8|LPM_MUX:LPM_MUX_component"
@@ -488,16 +494,17 @@ Info (12133): Instantiated megafunction "lpm_counter1:inst9|lpm_counter:LPM_COUN
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_nkh.tdf
     Info (12023): Found entity 1: cntr_nkh
 Info (12128): Elaborating entity "cntr_nkh" for hierarchy "lpm_counter1:inst9|lpm_counter:LPM_COUNTER_component|cntr_nkh:auto_generated"
+Warning (14026): LATCH primitive "inst2" is permanently enabled
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 52 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 55 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 9 input pins
     Info (21059): Implemented 3 output pins
-    Info (21061): Implemented 40 logic cells
+    Info (21061): Implemented 43 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4641 megabytes
-    Info: Processing ended: Fri Sep 17 23:29:11 2021
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Peak virtual memory: 4661 megabytes
+    Info: Processing ended: Mon Sep 20 11:06:59 2021
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:03
 
 
