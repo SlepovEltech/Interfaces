@@ -67,16 +67,16 @@ Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage 
 ~ASDO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : 1         : input  : 3.3-V LVTTL       :         : 1         : N              
 ~nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : 2         : input  : 3.3-V LVTTL       :         : 1         : N              
 GND*                         : 3         :        :                   :         : 1         :                
-SCK                          : 4         : output : 3.3-V LVTTL       :         : 1         : Y              
+GND*                         : 4         :        :                   :         : 1         :                
 GND*                         : 5         :        :                   :         : 1         :                
 GND*                         : 6         :        :                   :         : 1         :                
 VCCIO1                       : 7         : power  :                   : 3.3V    : 1         :                
-MOSI                         : 8         : output : 3.3-V LVTTL       :         : 1         : Y              
+GND*                         : 8         :        :                   :         : 1         :                
 GND                          : 9         : gnd    :                   :         :           :                
 GND*                         : 10        :        :                   :         : 1         :                
 GND*                         : 11        :        :                   :         : 1         :                
 GND*                         : 12        :        :                   :         : 1         :                
-CS                           : 13        : output : 3.3-V LVTTL       :         : 1         : Y              
+GND*                         : 13        :        :                   :         : 1         :                
 GND*                         : 14        :        :                   :         : 1         :                
 GND*                         : 15        :        :                   :         : 1         :                
 TDO                          : 16        : output :                   :         : 1         :                
@@ -93,12 +93,12 @@ nCONFIG                      : 26        :        :                   :         
 GND+                         : 27        :        :                   :         : 1         :                
 GND+                         : 28        :        :                   :         : 1         :                
 VCCIO1                       : 29        : power  :                   : 3.3V    : 1         :                
-GND*                         : 30        :        :                   :         : 1         :                
-GND*                         : 31        :        :                   :         : 1         :                
+CS                           : 30        : output : 3.3-V LVTTL       :         : 1         : Y              
+SCK                          : 31        : output : 3.3-V LVTTL       :         : 1         : Y              
 GND*                         : 32        :        :                   :         : 1         :                
-GND*                         : 33        :        :                   :         : 1         :                
-GND*                         : 34        :        :                   :         : 1         :                
-GND*                         : 35        :        :                   :         : 1         :                
+MOSI                         : 33        : output : 3.3-V LVTTL       :         : 1         : Y              
+LDAC                         : 34        : output : 3.3-V LVTTL       :         : 1         : Y              
+CLR                          : 35        : output : 3.3-V LVTTL       :         : 1         : Y              
 GND*                         : 36        :        :                   :         : 1         :                
 GND*                         : 37        :        :                   :         : 1         :                
 GND                          : 38        : gnd    :                   :         :           :                

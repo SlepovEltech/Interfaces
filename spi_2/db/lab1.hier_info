@@ -2,6 +2,7 @@
 SCK <= not.DB_MAX_OUTPUT_PORT_TYPE
 QUARZ => lpm_counter0:inst.clock
 QUARZ => lpm_counter2:inst13.clock
+QUARZ => lpm_counter4:inst7.clock
 CS <= not_1.DB_MAX_OUTPUT_PORT_TYPE
 MOSI <= inst_d.DB_MAX_OUTPUT_PORT_TYPE
 CODE[0] => lpm_mux0:inst8.data11
@@ -11,7 +12,9 @@ CODE[3] => lpm_mux0:inst8.data8
 CODE[4] => lpm_mux0:inst8.data7
 CODE[5] => lpm_mux0:inst8.data6
 CODE[6] => lpm_mux0:inst8.data5
-CODE[7] => lpm_mux0:inst8.data4
+CODE[7] => ~NO_FANOUT~
+CLR <= TRUE.DB_MAX_OUTPUT_PORT_TYPE
+LDAC <= inst12.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |lab1|lpm_constant0:instt
@@ -483,5 +486,133 @@ q[0] <= counter_reg_bit1a[0].REGOUT
 q[1] <= counter_reg_bit1a[1].REGOUT
 q[2] <= counter_reg_bit1a[2].REGOUT
 q[3] <= counter_reg_bit1a[3].REGOUT
+
+
+|lab1|lpm_counter3:inst1
+aclr => lpm_counter:LPM_COUNTER_component.aclr
+clock => lpm_counter:LPM_COUNTER_component.clock
+cout <= lpm_counter:LPM_COUNTER_component.cout
+q[0] <= lpm_counter:LPM_COUNTER_component.q[0]
+q[1] <= lpm_counter:LPM_COUNTER_component.q[1]
+q[2] <= lpm_counter:LPM_COUNTER_component.q[2]
+
+
+|lab1|lpm_counter3:inst1|lpm_counter:LPM_COUNTER_component
+clock => cntr_nrj:auto_generated.clock
+clk_en => ~NO_FANOUT~
+cnt_en => ~NO_FANOUT~
+updown => ~NO_FANOUT~
+aclr => cntr_nrj:auto_generated.aclr
+aset => ~NO_FANOUT~
+aconst => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+sset => ~NO_FANOUT~
+sconst => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+data[0] => ~NO_FANOUT~
+data[1] => ~NO_FANOUT~
+data[2] => ~NO_FANOUT~
+cin => ~NO_FANOUT~
+q[0] <= cntr_nrj:auto_generated.q[0]
+q[1] <= cntr_nrj:auto_generated.q[1]
+q[2] <= cntr_nrj:auto_generated.q[2]
+cout <= cntr_nrj:auto_generated.cout
+eq[0] <= <GND>
+eq[1] <= <GND>
+eq[2] <= <GND>
+eq[3] <= <GND>
+eq[4] <= <GND>
+eq[5] <= <GND>
+eq[6] <= <GND>
+eq[7] <= <GND>
+eq[8] <= <GND>
+eq[9] <= <GND>
+eq[10] <= <GND>
+eq[11] <= <GND>
+eq[12] <= <GND>
+eq[13] <= <GND>
+eq[14] <= <GND>
+eq[15] <= <GND>
+
+
+|lab1|lpm_counter3:inst1|lpm_counter:LPM_COUNTER_component|cntr_nrj:auto_generated
+aclr => counter_reg_bit1a[2].ACLR
+aclr => counter_reg_bit1a[1].ACLR
+aclr => counter_reg_bit1a[0].ACLR
+clock => counter_reg_bit1a[2].CLK
+clock => counter_reg_bit1a[1].CLK
+clock => counter_reg_bit1a[0].CLK
+cout <= cout_actual.DB_MAX_OUTPUT_PORT_TYPE
+q[0] <= counter_reg_bit1a[0].REGOUT
+q[1] <= counter_reg_bit1a[1].REGOUT
+q[2] <= counter_reg_bit1a[2].REGOUT
+
+
+|lab1|lpm_counter3:inst1|lpm_counter:LPM_COUNTER_component|cntr_nrj:auto_generated|cmpr_7cc:cmpr3
+aeb <= aeb_result_wire[0].DB_MAX_OUTPUT_PORT_TYPE
+dataa[0] => data_wire[0].IN0
+dataa[1] => data_wire[0].IN0
+dataa[2] => data_wire[1].IN0
+datab[0] => data_wire[0].IN1
+datab[1] => data_wire[0].IN1
+datab[2] => data_wire[1].IN1
+
+
+|lab1|lpm_counter4:inst7
+clock => lpm_counter:LPM_COUNTER_component.clock
+cout <= lpm_counter:LPM_COUNTER_component.cout
+q[0] <= lpm_counter:LPM_COUNTER_component.q[0]
+q[1] <= lpm_counter:LPM_COUNTER_component.q[1]
+q[2] <= lpm_counter:LPM_COUNTER_component.q[2]
+
+
+|lab1|lpm_counter4:inst7|lpm_counter:LPM_COUNTER_component
+clock => cntr_i3i:auto_generated.clock
+clk_en => ~NO_FANOUT~
+cnt_en => ~NO_FANOUT~
+updown => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+aconst => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+sset => ~NO_FANOUT~
+sconst => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+data[0] => ~NO_FANOUT~
+data[1] => ~NO_FANOUT~
+data[2] => ~NO_FANOUT~
+cin => ~NO_FANOUT~
+q[0] <= cntr_i3i:auto_generated.q[0]
+q[1] <= cntr_i3i:auto_generated.q[1]
+q[2] <= cntr_i3i:auto_generated.q[2]
+cout <= cntr_i3i:auto_generated.cout
+eq[0] <= <GND>
+eq[1] <= <GND>
+eq[2] <= <GND>
+eq[3] <= <GND>
+eq[4] <= <GND>
+eq[5] <= <GND>
+eq[6] <= <GND>
+eq[7] <= <GND>
+eq[8] <= <GND>
+eq[9] <= <GND>
+eq[10] <= <GND>
+eq[11] <= <GND>
+eq[12] <= <GND>
+eq[13] <= <GND>
+eq[14] <= <GND>
+eq[15] <= <GND>
+
+
+|lab1|lpm_counter4:inst7|lpm_counter:LPM_COUNTER_component|cntr_i3i:auto_generated
+clock => counter_reg_bit1a[2].CLK
+clock => counter_reg_bit1a[1].CLK
+clock => counter_reg_bit1a[0].CLK
+cout <= cout_actual.DB_MAX_OUTPUT_PORT_TYPE
+q[0] <= counter_reg_bit1a[0].REGOUT
+q[1] <= counter_reg_bit1a[1].REGOUT
+q[2] <= counter_reg_bit1a[2].REGOUT
 
 
