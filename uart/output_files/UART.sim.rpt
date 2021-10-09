@@ -1,5 +1,5 @@
 Simulator report for UART
-Sat Oct 09 13:49:49 2021
+Sat Oct 09 15:29:03 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -45,9 +45,9 @@ applicable agreement for further details.
 +-----------------------------+--------------+
 ; Simulation Start Time       ; 0 ps         ;
 ; Simulation End Time         ; 1.0 us       ;
-; Simulation Netlist Size     ; 177 nodes    ;
-; Simulation Coverage         ;      57.35 % ;
-; Total Number of Transitions ; 18191        ;
+; Simulation Netlist Size     ; 201 nodes    ;
+; Simulation Coverage         ;      65.35 % ;
+; Total Number of Transitions ; 18915        ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Cyclone II   ;
 +-----------------------------+--------------+
@@ -94,13 +94,13 @@ Please use Quartus II 64-Bit to view the waveform report data.
 +-----------------------------------------------------+--------------+
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
-; Total coverage as a percentage                      ;      57.35 % ;
-; Total nodes checked                                 ; 177          ;
-; Total output ports checked                          ; 204          ;
-; Total output ports with complete 1/0-value coverage ; 117          ;
-; Total output ports with no 1/0-value coverage       ; 87           ;
-; Total output ports with no 1-value coverage         ; 87           ;
-; Total output ports with no 0-value coverage         ; 87           ;
+; Total coverage as a percentage                      ;      65.35 % ;
+; Total nodes checked                                 ; 201          ;
+; Total output ports checked                          ; 228          ;
+; Total output ports with complete 1/0-value coverage ; 149          ;
+; Total output ports with no 1/0-value coverage       ; 79           ;
+; Total output ports with no 1-value coverage         ; 79           ;
+; Total output ports with no 0-value coverage         ; 79           ;
 +-----------------------------------------------------+--------------+
 
 
@@ -117,10 +117,38 @@ The following table displays output ports that toggle between 1 and 0 during sim
 ; |UART|inst6                                                                                                           ; |UART|inst6                                                                                                           ; out0             ;
 ; |UART|ENA                                                                                                             ; |UART|ENA                                                                                                             ; pin_out          ;
 ; |UART|inst9                                                                                                           ; |UART|inst9                                                                                                           ; regout           ;
+; |UART|inst17                                                                                                          ; |UART|inst17                                                                                                          ; out0             ;
+; |UART|inst16                                                                                                          ; |UART|inst16                                                                                                          ; out0             ;
+; |UART|inst15                                                                                                          ; |UART|inst15                                                                                                          ; out0             ;
+; |UART|JUMPER[5]                                                                                                       ; |UART|JUMPER[5]                                                                                                       ; out              ;
+; |UART|RX_ENA                                                                                                          ; |UART|RX_ENA                                                                                                          ; pin_out          ;
+; |UART|inst18                                                                                                          ; |UART|inst18                                                                                                          ; regout           ;
 ; |UART|MUX_ADD[3]                                                                                                      ; |UART|MUX_ADD[3]                                                                                                      ; pin_out          ;
 ; |UART|MUX_ADD[2]                                                                                                      ; |UART|MUX_ADD[2]                                                                                                      ; pin_out          ;
 ; |UART|MUX_ADD[1]                                                                                                      ; |UART|MUX_ADD[1]                                                                                                      ; pin_out          ;
 ; |UART|MUX_ADD[0]                                                                                                      ; |UART|MUX_ADD[0]                                                                                                      ; pin_out          ;
+; |UART|REG_OUT[10]                                                                                                     ; |UART|REG_OUT[10]                                                                                                     ; pin_out          ;
+; |UART|REG_OUT[9]                                                                                                      ; |UART|REG_OUT[9]                                                                                                      ; pin_out          ;
+; |UART|REG_OUT[8]                                                                                                      ; |UART|REG_OUT[8]                                                                                                      ; pin_out          ;
+; |UART|REG_OUT[7]                                                                                                      ; |UART|REG_OUT[7]                                                                                                      ; pin_out          ;
+; |UART|REG_OUT[6]                                                                                                      ; |UART|REG_OUT[6]                                                                                                      ; pin_out          ;
+; |UART|REG_OUT[5]                                                                                                      ; |UART|REG_OUT[5]                                                                                                      ; pin_out          ;
+; |UART|REG_OUT[4]                                                                                                      ; |UART|REG_OUT[4]                                                                                                      ; pin_out          ;
+; |UART|REG_OUT[3]                                                                                                      ; |UART|REG_OUT[3]                                                                                                      ; pin_out          ;
+; |UART|REG_OUT[2]                                                                                                      ; |UART|REG_OUT[2]                                                                                                      ; pin_out          ;
+; |UART|REG_OUT[1]                                                                                                      ; |UART|REG_OUT[1]                                                                                                      ; pin_out          ;
+; |UART|REG_OUT[0]                                                                                                      ; |UART|REG_OUT[0]                                                                                                      ; pin_out          ;
+; |UART|lpm_shiftreg0:inst20|lpm_shiftreg:LPM_SHIFTREG_component|dffs[10]                                               ; |UART|lpm_shiftreg0:inst20|lpm_shiftreg:LPM_SHIFTREG_component|dffs[10]                                               ; regout           ;
+; |UART|lpm_shiftreg0:inst20|lpm_shiftreg:LPM_SHIFTREG_component|dffs[9]                                                ; |UART|lpm_shiftreg0:inst20|lpm_shiftreg:LPM_SHIFTREG_component|dffs[9]                                                ; regout           ;
+; |UART|lpm_shiftreg0:inst20|lpm_shiftreg:LPM_SHIFTREG_component|dffs[8]                                                ; |UART|lpm_shiftreg0:inst20|lpm_shiftreg:LPM_SHIFTREG_component|dffs[8]                                                ; regout           ;
+; |UART|lpm_shiftreg0:inst20|lpm_shiftreg:LPM_SHIFTREG_component|dffs[7]                                                ; |UART|lpm_shiftreg0:inst20|lpm_shiftreg:LPM_SHIFTREG_component|dffs[7]                                                ; regout           ;
+; |UART|lpm_shiftreg0:inst20|lpm_shiftreg:LPM_SHIFTREG_component|dffs[6]                                                ; |UART|lpm_shiftreg0:inst20|lpm_shiftreg:LPM_SHIFTREG_component|dffs[6]                                                ; regout           ;
+; |UART|lpm_shiftreg0:inst20|lpm_shiftreg:LPM_SHIFTREG_component|dffs[5]                                                ; |UART|lpm_shiftreg0:inst20|lpm_shiftreg:LPM_SHIFTREG_component|dffs[5]                                                ; regout           ;
+; |UART|lpm_shiftreg0:inst20|lpm_shiftreg:LPM_SHIFTREG_component|dffs[4]                                                ; |UART|lpm_shiftreg0:inst20|lpm_shiftreg:LPM_SHIFTREG_component|dffs[4]                                                ; regout           ;
+; |UART|lpm_shiftreg0:inst20|lpm_shiftreg:LPM_SHIFTREG_component|dffs[3]                                                ; |UART|lpm_shiftreg0:inst20|lpm_shiftreg:LPM_SHIFTREG_component|dffs[3]                                                ; regout           ;
+; |UART|lpm_shiftreg0:inst20|lpm_shiftreg:LPM_SHIFTREG_component|dffs[2]                                                ; |UART|lpm_shiftreg0:inst20|lpm_shiftreg:LPM_SHIFTREG_component|dffs[2]                                                ; regout           ;
+; |UART|lpm_shiftreg0:inst20|lpm_shiftreg:LPM_SHIFTREG_component|dffs[1]                                                ; |UART|lpm_shiftreg0:inst20|lpm_shiftreg:LPM_SHIFTREG_component|dffs[1]                                                ; regout           ;
+; |UART|lpm_shiftreg0:inst20|lpm_shiftreg:LPM_SHIFTREG_component|dffs[0]                                                ; |UART|lpm_shiftreg0:inst20|lpm_shiftreg:LPM_SHIFTREG_component|dffs[0]                                                ; regout           ;
 ; |UART|lpm_counter1:inst5|lpm_counter:LPM_COUNTER_component|cntr_hhk:auto_generated|cout_actual                        ; |UART|lpm_counter1:inst5|lpm_counter:LPM_COUNTER_component|cntr_hhk:auto_generated|cout_actual                        ; out0             ;
 ; |UART|lpm_counter1:inst5|lpm_counter:LPM_COUNTER_component|cntr_hhk:auto_generated|counter_comb_bita0                 ; |UART|lpm_counter1:inst5|lpm_counter:LPM_COUNTER_component|cntr_hhk:auto_generated|counter_comb_bita0                 ; combout          ;
 ; |UART|lpm_counter1:inst5|lpm_counter:LPM_COUNTER_component|cntr_hhk:auto_generated|counter_comb_bita0                 ; |UART|lpm_counter1:inst5|lpm_counter:LPM_COUNTER_component|cntr_hhk:auto_generated|counter_comb_bita0~COUT            ; cout             ;
@@ -157,9 +185,11 @@ The following table displays output ports that toggle between 1 and 0 during sim
 ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~42                                            ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~42                                            ; out0             ;
 ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~44                                            ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~44                                            ; out0             ;
 ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~46                                            ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~46                                            ; out0             ;
+; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~47                                            ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~47                                            ; out0             ;
 ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~49                                            ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~49                                            ; out0             ;
 ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~51                                            ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~51                                            ; out0             ;
 ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~54                                            ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~54                                            ; out0             ;
+; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~56                                            ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~56                                            ; out0             ;
 ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~58                                            ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~58                                            ; out0             ;
 ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~60                                            ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~60                                            ; out0             ;
 ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~63                                            ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~63                                            ; out0             ;
@@ -179,9 +209,11 @@ The following table displays output ports that toggle between 1 and 0 during sim
 ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~92                                            ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~92                                            ; out0             ;
 ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~94                                            ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~94                                            ; out0             ;
 ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~96                                            ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~96                                            ; out0             ;
+; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~97                                            ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~97                                            ; out0             ;
 ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~99                                            ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~99                                            ; out0             ;
 ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~101                                           ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~101                                           ; out0             ;
 ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~104                                           ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~104                                           ; out0             ;
+; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~106                                           ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~106                                           ; out0             ;
 ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~108                                           ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~108                                           ; out0             ;
 ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~110                                           ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~110                                           ; out0             ;
 ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~113                                           ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~113                                           ; out0             ;
@@ -236,16 +268,12 @@ The following table displays output ports that do not toggle to 1 during simulat
 +------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+------------------+
 ; Node Name                                                                                                        ; Output Port Name                                                                                                 ; Output Port Type ;
 +------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+------------------+
-; |UART|inst17                                                                                                     ; |UART|inst17                                                                                                     ; out0             ;
-; |UART|inst16                                                                                                     ; |UART|inst16                                                                                                     ; out0             ;
-; |UART|inst15                                                                                                     ; |UART|inst15                                                                                                     ; out0             ;
 ; |UART|inst14                                                                                                     ; |UART|inst14                                                                                                     ; out0             ;
 ; |UART|inst13                                                                                                     ; |UART|inst13                                                                                                     ; out0             ;
 ; |UART|inst12                                                                                                     ; |UART|inst12                                                                                                     ; out0             ;
 ; |UART|inst11                                                                                                     ; |UART|inst11                                                                                                     ; out0             ;
 ; |UART|JUMPER[7]                                                                                                  ; |UART|JUMPER[7]                                                                                                  ; out              ;
 ; |UART|JUMPER[6]                                                                                                  ; |UART|JUMPER[6]                                                                                                  ; out              ;
-; |UART|JUMPER[5]                                                                                                  ; |UART|JUMPER[5]                                                                                                  ; out              ;
 ; |UART|JUMPER[4]                                                                                                  ; |UART|JUMPER[4]                                                                                                  ; out              ;
 ; |UART|JUMPER[3]                                                                                                  ; |UART|JUMPER[3]                                                                                                  ; out              ;
 ; |UART|JUMPER[2]                                                                                                  ; |UART|JUMPER[2]                                                                                                  ; out              ;
@@ -258,11 +286,7 @@ The following table displays output ports that do not toggle to 1 during simulat
 ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~11                                       ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~11                                       ; out0             ;
 ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~13                                       ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~13                                       ; out0             ;
 ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~41                                       ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~41                                       ; out0             ;
-; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~47                                       ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~47                                       ; out0             ;
-; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~56                                       ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~56                                       ; out0             ;
 ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~91                                       ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~91                                       ; out0             ;
-; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~97                                       ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~97                                       ; out0             ;
-; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~106                                      ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~106                                      ; out0             ;
 ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~140                                      ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~140                                      ; out0             ;
 ; |UART|lpm_counter2:inst8|lpm_counter:LPM_COUNTER_component|cntr_ggj:auto_generated|counter_comb_bita4            ; |UART|lpm_counter2:inst8|lpm_counter:LPM_COUNTER_component|cntr_ggj:auto_generated|counter_comb_bita4~COUT       ; cout             ;
 ; |UART|lpm_counter2:inst8|lpm_counter:LPM_COUNTER_component|cntr_ggj:auto_generated|counter_comb_bita5            ; |UART|lpm_counter2:inst8|lpm_counter:LPM_COUNTER_component|cntr_ggj:auto_generated|counter_comb_bita5            ; combout          ;
@@ -332,16 +356,12 @@ The following table displays output ports that do not toggle to 0 during simulat
 +------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+------------------+
 ; Node Name                                                                                                        ; Output Port Name                                                                                                 ; Output Port Type ;
 +------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+------------------+
-; |UART|inst17                                                                                                     ; |UART|inst17                                                                                                     ; out0             ;
-; |UART|inst16                                                                                                     ; |UART|inst16                                                                                                     ; out0             ;
-; |UART|inst15                                                                                                     ; |UART|inst15                                                                                                     ; out0             ;
 ; |UART|inst14                                                                                                     ; |UART|inst14                                                                                                     ; out0             ;
 ; |UART|inst13                                                                                                     ; |UART|inst13                                                                                                     ; out0             ;
 ; |UART|inst12                                                                                                     ; |UART|inst12                                                                                                     ; out0             ;
 ; |UART|inst11                                                                                                     ; |UART|inst11                                                                                                     ; out0             ;
 ; |UART|JUMPER[7]                                                                                                  ; |UART|JUMPER[7]                                                                                                  ; out              ;
 ; |UART|JUMPER[6]                                                                                                  ; |UART|JUMPER[6]                                                                                                  ; out              ;
-; |UART|JUMPER[5]                                                                                                  ; |UART|JUMPER[5]                                                                                                  ; out              ;
 ; |UART|JUMPER[4]                                                                                                  ; |UART|JUMPER[4]                                                                                                  ; out              ;
 ; |UART|JUMPER[3]                                                                                                  ; |UART|JUMPER[3]                                                                                                  ; out              ;
 ; |UART|JUMPER[2]                                                                                                  ; |UART|JUMPER[2]                                                                                                  ; out              ;
@@ -354,11 +374,7 @@ The following table displays output ports that do not toggle to 0 during simulat
 ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~11                                       ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~11                                       ; out0             ;
 ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~13                                       ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~13                                       ; out0             ;
 ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~41                                       ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~41                                       ; out0             ;
-; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~47                                       ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~47                                       ; out0             ;
-; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~56                                       ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~56                                       ; out0             ;
 ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~91                                       ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~91                                       ; out0             ;
-; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~97                                       ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~97                                       ; out0             ;
-; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~106                                      ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~106                                      ; out0             ;
 ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~140                                      ; |UART|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_j4e:auto_generated|_~140                                      ; out0             ;
 ; |UART|lpm_counter2:inst8|lpm_counter:LPM_COUNTER_component|cntr_ggj:auto_generated|counter_comb_bita4            ; |UART|lpm_counter2:inst8|lpm_counter:LPM_COUNTER_component|cntr_ggj:auto_generated|counter_comb_bita4~COUT       ; cout             ;
 ; |UART|lpm_counter2:inst8|lpm_counter:LPM_COUNTER_component|cntr_ggj:auto_generated|counter_comb_bita5            ; |UART|lpm_counter2:inst8|lpm_counter:LPM_COUNTER_component|cntr_ggj:auto_generated|counter_comb_bita5            ; combout          ;
@@ -435,19 +451,19 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Simulator
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sat Oct 09 13:49:48 2021
+    Info: Processing started: Sat Oct 09 15:29:02 2021
 Info: Command: quartus_sim --simulation_results_format=VWF UART -c UART
 Info (324025): Using vector source file "C:/Users/79616/Documents/GitHub/Interfaces/uart/Waveform.vwf"
 Warning (328013): Ignored node in vector source file. Can't find corresponding node name "DEBUG_IN" in design.
 Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info (310002): Simulation partitioned into 1 sub-simulations
-Info (328053): Simulation coverage is      57.35 %
-Info (328052): Number of transitions in simulation is 18191
+Info (328053): Simulation coverage is      65.35 %
+Info (328052): Number of transitions in simulation is 18915
 Info (324045): Vector file UART.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
 Info: Quartus II 64-Bit Simulator was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4441 megabytes
-    Info: Processing ended: Sat Oct 09 13:49:49 2021
+    Info: Processing ended: Sat Oct 09 15:29:03 2021
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

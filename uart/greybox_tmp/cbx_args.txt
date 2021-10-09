@@ -1,18 +1,10 @@
-LPM_SIZE=11
-LPM_TYPE=LPM_MUX
-LPM_WIDTH=1
-LPM_WIDTHS=4
+LPM_DIRECTION=UP
+LPM_MODULUS=12
+LPM_PORT_UPDOWN=PORT_UNUSED
+LPM_TYPE=LPM_COUNTER
+LPM_WIDTH=4
 DEVICE_FAMILY="Cyclone II"
-data
-data
-data
-data
-data
-data
-data
-data
-data
-data
-data
-sel
-result
+clk_en
+clock
+cout
+q
