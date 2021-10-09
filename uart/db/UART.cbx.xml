@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="UART">
+		<CBX_INST_ENTRY INSTANCE_NAME="|UART|lpm_constant0:inst4|lpm_constant:LPM_CONSTANT_component" CBX_FILE_NAME="lpm_constant_4e6.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|UART|lpm_constant1:inst3|lpm_constant:LPM_CONSTANT_component" CBX_FILE_NAME="lpm_constant_3e6.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|UART|lpm_counter0:inst|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_5fj.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|UART|lpm_counter1:inst5|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_hhk.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|UART|lpm_counter2:inst8|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_ggj.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|UART|lpm_mux0:inst7|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_j4e.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

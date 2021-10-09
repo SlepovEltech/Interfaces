@@ -14,9 +14,9 @@
 
 // VENDOR "Altera"
 // PROGRAM "Quartus II 64-Bit"
-// VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version"
+// VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
 
-// DATE "09/27/2021 13:12:18"
+// DATE "10/03/2021 21:31:38"
 
 // 
 // Device: Altera EP2C5Q208C8 Package PQFP208
@@ -159,11 +159,11 @@ wire \inst1|LPM_COUNTER_component|auto_generated|cout_actual~0_combout ;
 wire \inst1|LPM_COUNTER_component|auto_generated|trigger_mux_w[0]~1_combout ;
 wire \inst2~combout ;
 wire [11:0] \inst13|LPM_COUNTER_component|auto_generated|safe_q ;
-wire [2:0] \inst1|LPM_COUNTER_component|auto_generated|current_reg_q_w ;
-wire [2:0] \inst7|LPM_COUNTER_component|auto_generated|safe_q ;
 wire [7:0] \inst|LPM_COUNTER_component|auto_generated|safe_q ;
-wire [7:0] \CODE~combout ;
 wire [3:0] \inst9|LPM_COUNTER_component|auto_generated|safe_q ;
+wire [2:0] \inst7|LPM_COUNTER_component|auto_generated|safe_q ;
+wire [7:0] \CODE~combout ;
+wire [2:0] \inst1|LPM_COUNTER_component|auto_generated|current_reg_q_w ;
 
 
 // Location: LCFF_X24_Y10_N7

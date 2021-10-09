@@ -1,5 +1,5 @@
 Simulator report for lab1
-Sun Sep 19 08:48:20 2021
+Sun Oct 03 21:32:00 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -45,9 +45,9 @@ applicable agreement for further details.
 +-----------------------------+--------------+
 ; Simulation Start Time       ; 0 ps         ;
 ; Simulation End Time         ; 1.0 us       ;
-; Simulation Netlist Size     ; 149 nodes    ;
-; Simulation Coverage         ;      55.56 % ;
-; Total Number of Transitions ; 8116         ;
+; Simulation Netlist Size     ; 167 nodes    ;
+; Simulation Coverage         ;      60.21 % ;
+; Total Number of Transitions ; 10776        ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Cyclone II   ;
 +-----------------------------+--------------+
@@ -94,10 +94,10 @@ Please use Quartus II 64-Bit to view the waveform report data.
 +-----------------------------------------------------+--------------+
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
-; Total coverage as a percentage                      ;      55.56 % ;
-; Total nodes checked                                 ; 149          ;
-; Total output ports checked                          ; 171          ;
-; Total output ports with complete 1/0-value coverage ; 95           ;
+; Total coverage as a percentage                      ;      60.21 % ;
+; Total nodes checked                                 ; 167          ;
+; Total output ports checked                          ; 191          ;
+; Total output ports with complete 1/0-value coverage ; 115          ;
 ; Total output ports with no 1/0-value coverage       ; 76           ;
 ; Total output ports with no 1-value coverage         ; 76           ;
 ; Total output ports with no 0-value coverage         ; 76           ;
@@ -116,6 +116,28 @@ The following table displays output ports that toggle between 1 and 0 during sim
 ; |lab1|CS                                                                                                               ; |lab1|CS                                                                                                               ; pin_out          ;
 ; |lab1|MOSI                                                                                                             ; |lab1|MOSI                                                                                                             ; pin_out          ;
 ; |lab1|inst_d                                                                                                           ; |lab1|inst_d                                                                                                           ; regout           ;
+; |lab1|LDAC                                                                                                             ; |lab1|LDAC                                                                                                             ; pin_out          ;
+; |lab1|inst2                                                                                                            ; |lab1|inst2                                                                                                            ; out0             ;
+; |lab1|inst6                                                                                                            ; |lab1|inst6                                                                                                            ; out0             ;
+; |lab1|inst5                                                                                                            ; |lab1|inst5                                                                                                            ; regout           ;
+; |lab1|lpm_counter4:inst7|lpm_counter:LPM_COUNTER_component|cntr_i3i:auto_generated|counter_comb_bita0                  ; |lab1|lpm_counter4:inst7|lpm_counter:LPM_COUNTER_component|cntr_i3i:auto_generated|counter_comb_bita0                  ; combout          ;
+; |lab1|lpm_counter4:inst7|lpm_counter:LPM_COUNTER_component|cntr_i3i:auto_generated|counter_comb_bita0                  ; |lab1|lpm_counter4:inst7|lpm_counter:LPM_COUNTER_component|cntr_i3i:auto_generated|counter_comb_bita0~COUT             ; cout             ;
+; |lab1|lpm_counter4:inst7|lpm_counter:LPM_COUNTER_component|cntr_i3i:auto_generated|counter_comb_bita1                  ; |lab1|lpm_counter4:inst7|lpm_counter:LPM_COUNTER_component|cntr_i3i:auto_generated|counter_comb_bita1                  ; combout          ;
+; |lab1|lpm_counter4:inst7|lpm_counter:LPM_COUNTER_component|cntr_i3i:auto_generated|counter_comb_bita1                  ; |lab1|lpm_counter4:inst7|lpm_counter:LPM_COUNTER_component|cntr_i3i:auto_generated|counter_comb_bita1~COUT             ; cout             ;
+; |lab1|lpm_counter4:inst7|lpm_counter:LPM_COUNTER_component|cntr_i3i:auto_generated|counter_comb_bita2                  ; |lab1|lpm_counter4:inst7|lpm_counter:LPM_COUNTER_component|cntr_i3i:auto_generated|counter_comb_bita2                  ; combout          ;
+; |lab1|lpm_counter4:inst7|lpm_counter:LPM_COUNTER_component|cntr_i3i:auto_generated|counter_comb_bita2                  ; |lab1|lpm_counter4:inst7|lpm_counter:LPM_COUNTER_component|cntr_i3i:auto_generated|counter_comb_bita2~COUT             ; cout             ;
+; |lab1|lpm_counter4:inst7|lpm_counter:LPM_COUNTER_component|cntr_i3i:auto_generated|counter_reg_bit1a[2]                ; |lab1|lpm_counter4:inst7|lpm_counter:LPM_COUNTER_component|cntr_i3i:auto_generated|safe_q[2]                           ; regout           ;
+; |lab1|lpm_counter4:inst7|lpm_counter:LPM_COUNTER_component|cntr_i3i:auto_generated|counter_reg_bit1a[1]                ; |lab1|lpm_counter4:inst7|lpm_counter:LPM_COUNTER_component|cntr_i3i:auto_generated|safe_q[1]                           ; regout           ;
+; |lab1|lpm_counter4:inst7|lpm_counter:LPM_COUNTER_component|cntr_i3i:auto_generated|counter_reg_bit1a[0]                ; |lab1|lpm_counter4:inst7|lpm_counter:LPM_COUNTER_component|cntr_i3i:auto_generated|safe_q[0]                           ; regout           ;
+; |lab1|lpm_counter3:inst1|lpm_counter:LPM_COUNTER_component|cntr_nrj:auto_generated|cout_actual                         ; |lab1|lpm_counter3:inst1|lpm_counter:LPM_COUNTER_component|cntr_nrj:auto_generated|cout_actual                         ; out0             ;
+; |lab1|lpm_counter3:inst1|lpm_counter:LPM_COUNTER_component|cntr_nrj:auto_generated|trigger_mux_w[2]~0                  ; |lab1|lpm_counter3:inst1|lpm_counter:LPM_COUNTER_component|cntr_nrj:auto_generated|trigger_mux_w[2]~0                  ; out0             ;
+; |lab1|lpm_counter3:inst1|lpm_counter:LPM_COUNTER_component|cntr_nrj:auto_generated|trigger_mux_w[1]~1                  ; |lab1|lpm_counter3:inst1|lpm_counter:LPM_COUNTER_component|cntr_nrj:auto_generated|trigger_mux_w[1]~1                  ; out0             ;
+; |lab1|lpm_counter3:inst1|lpm_counter:LPM_COUNTER_component|cntr_nrj:auto_generated|trigger_mux_w[0]~2                  ; |lab1|lpm_counter3:inst1|lpm_counter:LPM_COUNTER_component|cntr_nrj:auto_generated|trigger_mux_w[0]~2                  ; out0             ;
+; |lab1|lpm_counter3:inst1|lpm_counter:LPM_COUNTER_component|cntr_nrj:auto_generated|counter_reg_bit1a[2]                ; |lab1|lpm_counter3:inst1|lpm_counter:LPM_COUNTER_component|cntr_nrj:auto_generated|current_reg_q_w[2]                  ; regout           ;
+; |lab1|lpm_counter3:inst1|lpm_counter:LPM_COUNTER_component|cntr_nrj:auto_generated|counter_reg_bit1a[1]                ; |lab1|lpm_counter3:inst1|lpm_counter:LPM_COUNTER_component|cntr_nrj:auto_generated|current_reg_q_w[1]                  ; regout           ;
+; |lab1|lpm_counter3:inst1|lpm_counter:LPM_COUNTER_component|cntr_nrj:auto_generated|counter_reg_bit1a[0]                ; |lab1|lpm_counter3:inst1|lpm_counter:LPM_COUNTER_component|cntr_nrj:auto_generated|current_reg_q_w[0]                  ; regout           ;
+; |lab1|lpm_counter3:inst1|lpm_counter:LPM_COUNTER_component|cntr_nrj:auto_generated|cmpr_7cc:cmpr3|aneb_result_wire[0]  ; |lab1|lpm_counter3:inst1|lpm_counter:LPM_COUNTER_component|cntr_nrj:auto_generated|cmpr_7cc:cmpr3|aneb_result_wire[0]  ; out0             ;
+; |lab1|lpm_counter3:inst1|lpm_counter:LPM_COUNTER_component|cntr_nrj:auto_generated|cmpr_7cc:cmpr3|data_wire[0]         ; |lab1|lpm_counter3:inst1|lpm_counter:LPM_COUNTER_component|cntr_nrj:auto_generated|cmpr_7cc:cmpr3|data_wire[0]         ; out0             ;
 ; |lab1|lpm_counter1:inst9|lpm_counter:LPM_COUNTER_component|cntr_okh:auto_generated|counter_comb_bita0                  ; |lab1|lpm_counter1:inst9|lpm_counter:LPM_COUNTER_component|cntr_okh:auto_generated|counter_comb_bita0                  ; combout          ;
 ; |lab1|lpm_counter1:inst9|lpm_counter:LPM_COUNTER_component|cntr_okh:auto_generated|counter_comb_bita0                  ; |lab1|lpm_counter1:inst9|lpm_counter:LPM_COUNTER_component|cntr_okh:auto_generated|counter_comb_bita0~COUT             ; cout             ;
 ; |lab1|lpm_counter1:inst9|lpm_counter:LPM_COUNTER_component|cntr_okh:auto_generated|counter_comb_bita1                  ; |lab1|lpm_counter1:inst9|lpm_counter:LPM_COUNTER_component|cntr_okh:auto_generated|counter_comb_bita1                  ; combout          ;
@@ -127,16 +149,10 @@ The following table displays output ports that toggle between 1 and 0 during sim
 ; |lab1|lpm_counter1:inst9|lpm_counter:LPM_COUNTER_component|cntr_okh:auto_generated|counter_reg_bit1a[2]                ; |lab1|lpm_counter1:inst9|lpm_counter:LPM_COUNTER_component|cntr_okh:auto_generated|safe_q[2]                           ; regout           ;
 ; |lab1|lpm_counter1:inst9|lpm_counter:LPM_COUNTER_component|cntr_okh:auto_generated|counter_reg_bit1a[1]                ; |lab1|lpm_counter1:inst9|lpm_counter:LPM_COUNTER_component|cntr_okh:auto_generated|safe_q[1]                           ; regout           ;
 ; |lab1|lpm_counter1:inst9|lpm_counter:LPM_COUNTER_component|cntr_okh:auto_generated|counter_reg_bit1a[0]                ; |lab1|lpm_counter1:inst9|lpm_counter:LPM_COUNTER_component|cntr_okh:auto_generated|safe_q[0]                           ; regout           ;
-; |lab1|lpm_mux0:inst8|lpm_mux:LPM_MUX_component|mux_o4e:auto_generated|_~2                                              ; |lab1|lpm_mux0:inst8|lpm_mux:LPM_MUX_component|mux_o4e:auto_generated|_~2                                              ; out0             ;
-; |lab1|lpm_mux0:inst8|lpm_mux:LPM_MUX_component|mux_o4e:auto_generated|_~4                                              ; |lab1|lpm_mux0:inst8|lpm_mux:LPM_MUX_component|mux_o4e:auto_generated|_~4                                              ; out0             ;
 ; |lab1|lpm_mux0:inst8|lpm_mux:LPM_MUX_component|mux_o4e:auto_generated|_~5                                              ; |lab1|lpm_mux0:inst8|lpm_mux:LPM_MUX_component|mux_o4e:auto_generated|_~5                                              ; out0             ;
 ; |lab1|lpm_mux0:inst8|lpm_mux:LPM_MUX_component|mux_o4e:auto_generated|_~6                                              ; |lab1|lpm_mux0:inst8|lpm_mux:LPM_MUX_component|mux_o4e:auto_generated|_~6                                              ; out0             ;
-; |lab1|lpm_mux0:inst8|lpm_mux:LPM_MUX_component|mux_o4e:auto_generated|_~7                                              ; |lab1|lpm_mux0:inst8|lpm_mux:LPM_MUX_component|mux_o4e:auto_generated|_~7                                              ; out0             ;
-; |lab1|lpm_mux0:inst8|lpm_mux:LPM_MUX_component|mux_o4e:auto_generated|_~11                                             ; |lab1|lpm_mux0:inst8|lpm_mux:LPM_MUX_component|mux_o4e:auto_generated|_~11                                             ; out0             ;
-; |lab1|lpm_mux0:inst8|lpm_mux:LPM_MUX_component|mux_o4e:auto_generated|_~13                                             ; |lab1|lpm_mux0:inst8|lpm_mux:LPM_MUX_component|mux_o4e:auto_generated|_~13                                             ; out0             ;
 ; |lab1|lpm_mux0:inst8|lpm_mux:LPM_MUX_component|mux_o4e:auto_generated|_~14                                             ; |lab1|lpm_mux0:inst8|lpm_mux:LPM_MUX_component|mux_o4e:auto_generated|_~14                                             ; out0             ;
 ; |lab1|lpm_mux0:inst8|lpm_mux:LPM_MUX_component|mux_o4e:auto_generated|_~15                                             ; |lab1|lpm_mux0:inst8|lpm_mux:LPM_MUX_component|mux_o4e:auto_generated|_~15                                             ; out0             ;
-; |lab1|lpm_mux0:inst8|lpm_mux:LPM_MUX_component|mux_o4e:auto_generated|_~16                                             ; |lab1|lpm_mux0:inst8|lpm_mux:LPM_MUX_component|mux_o4e:auto_generated|_~16                                             ; out0             ;
 ; |lab1|lpm_mux0:inst8|lpm_mux:LPM_MUX_component|mux_o4e:auto_generated|_~19                                             ; |lab1|lpm_mux0:inst8|lpm_mux:LPM_MUX_component|mux_o4e:auto_generated|_~19                                             ; out0             ;
 ; |lab1|lpm_mux0:inst8|lpm_mux:LPM_MUX_component|mux_o4e:auto_generated|_~20                                             ; |lab1|lpm_mux0:inst8|lpm_mux:LPM_MUX_component|mux_o4e:auto_generated|_~20                                             ; out0             ;
 ; |lab1|lpm_mux0:inst8|lpm_mux:LPM_MUX_component|mux_o4e:auto_generated|_~21                                             ; |lab1|lpm_mux0:inst8|lpm_mux:LPM_MUX_component|mux_o4e:auto_generated|_~21                                             ; out0             ;
@@ -205,6 +221,10 @@ The following table displays output ports that toggle between 1 and 0 during sim
 ; |lab1|lpm_counter0:inst|lpm_counter:LPM_COUNTER_component|cntr_32k:auto_generated|cmpr_ccc:cmpr2|aneb_result_wire[0]~0 ; |lab1|lpm_counter0:inst|lpm_counter:LPM_COUNTER_component|cntr_32k:auto_generated|cmpr_ccc:cmpr2|aneb_result_wire[0]~0 ; out0             ;
 ; |lab1|lpm_counter0:inst|lpm_counter:LPM_COUNTER_component|cntr_32k:auto_generated|cmpr_ccc:cmpr2|aneb_result_wire[0]   ; |lab1|lpm_counter0:inst|lpm_counter:LPM_COUNTER_component|cntr_32k:auto_generated|cmpr_ccc:cmpr2|aneb_result_wire[0]   ; out0             ;
 ; |lab1|lpm_counter0:inst|lpm_counter:LPM_COUNTER_component|cntr_32k:auto_generated|cmpr_ccc:cmpr2|data_wire[0]          ; |lab1|lpm_counter0:inst|lpm_counter:LPM_COUNTER_component|cntr_32k:auto_generated|cmpr_ccc:cmpr2|data_wire[0]          ; out0             ;
+; |lab1|lpm_counter3:inst1|lpm_counter:LPM_COUNTER_component|cntr_nrj:auto_generated|op_1~0                              ; |lab1|lpm_counter3:inst1|lpm_counter:LPM_COUNTER_component|cntr_nrj:auto_generated|op_1~0                              ; out0             ;
+; |lab1|lpm_counter3:inst1|lpm_counter:LPM_COUNTER_component|cntr_nrj:auto_generated|op_1~1                              ; |lab1|lpm_counter3:inst1|lpm_counter:LPM_COUNTER_component|cntr_nrj:auto_generated|op_1~1                              ; out0             ;
+; |lab1|lpm_counter3:inst1|lpm_counter:LPM_COUNTER_component|cntr_nrj:auto_generated|op_1~2                              ; |lab1|lpm_counter3:inst1|lpm_counter:LPM_COUNTER_component|cntr_nrj:auto_generated|op_1~2                              ; out0             ;
+; |lab1|lpm_counter3:inst1|lpm_counter:LPM_COUNTER_component|cntr_nrj:auto_generated|op_1~3                              ; |lab1|lpm_counter3:inst1|lpm_counter:LPM_COUNTER_component|cntr_nrj:auto_generated|op_1~3                              ; out0             ;
 +------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+------------------+
 
 
@@ -214,7 +234,6 @@ The following table displays output ports that do not toggle to 1 during simulat
 +-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+------------------+
 ; Node Name                                                                                                       ; Output Port Name                                                                                                ; Output Port Type ;
 +-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+------------------+
-; |lab1|CODE[7]                                                                                                   ; |lab1|CODE[7]                                                                                                   ; out              ;
 ; |lab1|CODE[6]                                                                                                   ; |lab1|CODE[6]                                                                                                   ; out              ;
 ; |lab1|CODE[5]                                                                                                   ; |lab1|CODE[5]                                                                                                   ; out              ;
 ; |lab1|CODE[4]                                                                                                   ; |lab1|CODE[4]                                                                                                   ; out              ;
@@ -222,6 +241,7 @@ The following table displays output ports that do not toggle to 1 during simulat
 ; |lab1|CODE[2]                                                                                                   ; |lab1|CODE[2]                                                                                                   ; out              ;
 ; |lab1|CODE[1]                                                                                                   ; |lab1|CODE[1]                                                                                                   ; out              ;
 ; |lab1|CODE[0]                                                                                                   ; |lab1|CODE[0]                                                                                                   ; out              ;
+; |lab1|CLR                                                                                                       ; |lab1|CLR                                                                                                       ; pin_out          ;
 ; |lab1|lpm_mux0:inst8|lpm_mux:LPM_MUX_component|mux_o4e:auto_generated|_~0                                       ; |lab1|lpm_mux0:inst8|lpm_mux:LPM_MUX_component|mux_o4e:auto_generated|_~0                                       ; out0             ;
 ; |lab1|lpm_mux0:inst8|lpm_mux:LPM_MUX_component|mux_o4e:auto_generated|_~9                                       ; |lab1|lpm_mux0:inst8|lpm_mux:LPM_MUX_component|mux_o4e:auto_generated|_~9                                       ; out0             ;
 ; |lab1|lpm_mux0:inst8|lpm_mux:LPM_MUX_component|mux_o4e:auto_generated|_~18                                      ; |lab1|lpm_mux0:inst8|lpm_mux:LPM_MUX_component|mux_o4e:auto_generated|_~18                                      ; out0             ;
@@ -299,7 +319,6 @@ The following table displays output ports that do not toggle to 0 during simulat
 +-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+------------------+
 ; Node Name                                                                                                       ; Output Port Name                                                                                                ; Output Port Type ;
 +-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+------------------+
-; |lab1|CODE[7]                                                                                                   ; |lab1|CODE[7]                                                                                                   ; out              ;
 ; |lab1|CODE[6]                                                                                                   ; |lab1|CODE[6]                                                                                                   ; out              ;
 ; |lab1|CODE[5]                                                                                                   ; |lab1|CODE[5]                                                                                                   ; out              ;
 ; |lab1|CODE[4]                                                                                                   ; |lab1|CODE[4]                                                                                                   ; out              ;
@@ -307,6 +326,7 @@ The following table displays output ports that do not toggle to 0 during simulat
 ; |lab1|CODE[2]                                                                                                   ; |lab1|CODE[2]                                                                                                   ; out              ;
 ; |lab1|CODE[1]                                                                                                   ; |lab1|CODE[1]                                                                                                   ; out              ;
 ; |lab1|CODE[0]                                                                                                   ; |lab1|CODE[0]                                                                                                   ; out              ;
+; |lab1|CLR                                                                                                       ; |lab1|CLR                                                                                                       ; pin_out          ;
 ; |lab1|lpm_mux0:inst8|lpm_mux:LPM_MUX_component|mux_o4e:auto_generated|_~0                                       ; |lab1|lpm_mux0:inst8|lpm_mux:LPM_MUX_component|mux_o4e:auto_generated|_~0                                       ; out0             ;
 ; |lab1|lpm_mux0:inst8|lpm_mux:LPM_MUX_component|mux_o4e:auto_generated|_~9                                       ; |lab1|lpm_mux0:inst8|lpm_mux:LPM_MUX_component|mux_o4e:auto_generated|_~9                                       ; out0             ;
 ; |lab1|lpm_mux0:inst8|lpm_mux:LPM_MUX_component|mux_o4e:auto_generated|_~18                                      ; |lab1|lpm_mux0:inst8|lpm_mux:LPM_MUX_component|mux_o4e:auto_generated|_~18                                      ; out0             ;
@@ -391,19 +411,19 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Simulator
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sun Sep 19 08:48:20 2021
+    Info: Processing started: Sun Oct 03 21:32:00 2021
 Info: Command: quartus_sim --simulation_results_format=VWF lab1 -c lab1
 Info (324025): Using vector source file "C:/Users/79616/Documents/GitHub/Interfaces/spi_2/Waveform.vwf"
 Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info (310002): Simulation partitioned into 1 sub-simulations
-Info (328053): Simulation coverage is      55.56 %
-Info (328052): Number of transitions in simulation is 8116
+Info (328053): Simulation coverage is      60.21 %
+Info (328052): Number of transitions in simulation is 10776
 Info (324045): Vector file lab1.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
 Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4441 megabytes
-    Info: Processing ended: Sun Sep 19 08:48:20 2021
+    Info: Processing ended: Sun Oct 03 21:32:00 2021
     Info: Elapsed time: 00:00:00
-    Info: Total CPU time (on all processors): 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
 
 
