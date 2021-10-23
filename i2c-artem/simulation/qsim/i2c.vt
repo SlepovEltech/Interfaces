@@ -1,0 +1,342 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "10/23/2021 18:49:02"
+                                                                        
+// Verilog Self-Checking Test Bench (with test vectors) for design :    i2c
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module i2c_vlg_sample_tst(
+	DATA,
+	QUARZ,
+	sampler_tx
+);
+input [7:0] DATA;
+input  QUARZ;
+output sampler_tx;
+
+reg sample;
+time current_time;
+always @(DATA or QUARZ)
+                                                                                
+begin                                                 
+ if ($realtime > 0)                                   
+ begin                                                
+	if ($realtime == 0 || $realtime != current_time)  
+	begin									          
+		if (sample === 1'bx)                          
+			sample = 0;                               
+		else                                          
+			sample = ~sample;                         
+	end										          
+	current_time = $realtime;					      
+ end                                                  
+end                                                   
+
+assign sampler_tx = sample;
+endmodule
+
+module i2c_vlg_check_tst (
+	LED_0,
+	LED_1,
+	LED_2,
+	LED_3,
+	LED_5,
+	pin_name1,
+	SCL,
+	SDA,
+	SSCL,
+	sampler_rx
+);
+input  LED_0;
+input  LED_1;
+input  LED_2;
+input  LED_3;
+input  LED_5;
+input  pin_name1;
+input  SCL;
+input  SDA;
+input  SSCL;
+input sampler_rx;
+
+reg  LED_0_expected;
+reg  LED_1_expected;
+reg  LED_2_expected;
+reg  LED_3_expected;
+reg  LED_5_expected;
+reg  pin_name1_expected;
+reg  SCL_expected;
+reg  SDA_expected;
+reg  SSCL_expected;
+
+reg  LED_0_prev;
+reg  LED_1_prev;
+reg  LED_2_prev;
+reg  LED_3_prev;
+reg  LED_5_prev;
+reg  pin_name1_prev;
+reg  SCL_prev;
+reg  SDA_prev;
+reg  SSCL_prev;
+
+reg  SCL_expected_prev;
+reg  SDA_expected_prev;
+reg  SSCL_expected_prev;
+
+reg  last_SCL_exp;
+reg  last_SDA_exp;
+reg  last_SSCL_exp;
+
+reg trigger;
+
+integer i;
+integer nummismatches;
+
+reg [1:9] on_first_change ;
+
+
+initial
+begin
+trigger = 0;
+i = 0;
+nummismatches = 0;
+on_first_change = 9'b1;
+end
+
+// update real /o prevs
+
+always @(trigger)
+begin
+	LED_0_prev = LED_0;
+	LED_1_prev = LED_1;
+	LED_2_prev = LED_2;
+	LED_3_prev = LED_3;
+	LED_5_prev = LED_5;
+	pin_name1_prev = pin_name1;
+	SCL_prev = SCL;
+	SDA_prev = SDA;
+	SSCL_prev = SSCL;
+end
+
+// update expected /o prevs
+
+always @(trigger)
+begin
+	SCL_expected_prev = SCL_expected;
+	SDA_expected_prev = SDA_expected;
+	SSCL_expected_prev = SSCL_expected;
+end
+
+
+
+// expected SCL
+initial
+begin
+	SCL_expected = 1'bX;
+	SCL_expected = #999000 1'b0;
+end 
+
+// expected SDA
+initial
+begin
+	SDA_expected = 1'bX;
+	SDA_expected = #999000 1'b0;
+end 
+
+// expected SSCL
+initial
+begin
+	SSCL_expected = 1'bX;
+	SSCL_expected = #999000 1'b0;
+end 
+// generate trigger
+always @(LED_0_expected or LED_0 or LED_1_expected or LED_1 or LED_2_expected or LED_2 or LED_3_expected or LED_3 or LED_5_expected or LED_5 or pin_name1_expected or pin_name1 or SCL_expected or SCL or SDA_expected or SDA or SSCL_expected or SSCL)
+begin
+	trigger <= ~trigger;
+end
+
+always @(posedge sampler_rx or negedge sampler_rx)
+begin
+`ifdef debug_tbench
+	$display("Scanning pattern %d @time = %t",i,$realtime );
+	i = i + 1;
+	$display("| expected LED_0 = %b | expected LED_1 = %b | expected LED_2 = %b | expected LED_3 = %b | expected LED_5 = %b | expected pin_name1 = %b | expected SCL = %b | expected SDA = %b | expected SSCL = %b | ",LED_0_expected_prev,LED_1_expected_prev,LED_2_expected_prev,LED_3_expected_prev,LED_5_expected_prev,pin_name1_expected_prev,SCL_expected_prev,SDA_expected_prev,SSCL_expected_prev);
+	$display("| real LED_0 = %b | real LED_1 = %b | real LED_2 = %b | real LED_3 = %b | real LED_5 = %b | real pin_name1 = %b | real SCL = %b | real SDA = %b | real SSCL = %b | ",LED_0_prev,LED_1_prev,LED_2_prev,LED_3_prev,LED_5_prev,pin_name1_prev,SCL_prev,SDA_prev,SSCL_prev);
+`endif
+	if (
+		( SCL_expected_prev !== 1'bx ) && ( SCL_prev !== SCL_expected_prev )
+		&& ((SCL_expected_prev !== last_SCL_exp) ||
+			on_first_change[7])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port SCL :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", SCL_expected_prev);
+		$display ("     Real value = %b", SCL_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[7] = 1'b0;
+		last_SCL_exp = SCL_expected_prev;
+	end
+	if (
+		( SDA_expected_prev !== 1'bx ) && ( SDA_prev !== SDA_expected_prev )
+		&& ((SDA_expected_prev !== last_SDA_exp) ||
+			on_first_change[8])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port SDA :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", SDA_expected_prev);
+		$display ("     Real value = %b", SDA_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[8] = 1'b0;
+		last_SDA_exp = SDA_expected_prev;
+	end
+	if (
+		( SSCL_expected_prev !== 1'bx ) && ( SSCL_prev !== SSCL_expected_prev )
+		&& ((SSCL_expected_prev !== last_SSCL_exp) ||
+			on_first_change[9])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port SSCL :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", SSCL_expected_prev);
+		$display ("     Real value = %b", SSCL_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[9] = 1'b0;
+		last_SSCL_exp = SSCL_expected_prev;
+	end
+
+	trigger <= ~trigger;
+end
+initial 
+
+begin 
+$timeformat(-12,3," ps",6);
+#15000000;
+if (nummismatches > 0)
+	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
+else
+	$display ("Simulation passed !");
+$finish;
+end 
+endmodule
+
+module i2c_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg [7:0] DATA;
+reg QUARZ;
+// wires                                               
+wire LED_0;
+wire LED_1;
+wire LED_2;
+wire LED_3;
+wire LED_5;
+wire pin_name1;
+wire SCL;
+wire SDA;
+wire SSCL;
+
+wire sampler;                             
+
+// assign statements (if any)                          
+i2c i1 (
+// port map - connection between master ports and signals/registers   
+	.DATA(DATA),
+	.LED_0(LED_0),
+	.LED_1(LED_1),
+	.LED_2(LED_2),
+	.LED_3(LED_3),
+	.LED_5(LED_5),
+	.pin_name1(pin_name1),
+	.QUARZ(QUARZ),
+	.SCL(SCL),
+	.SDA(SDA),
+	.SSCL(SSCL)
+);
+// DATA[ 7 ]
+initial
+begin
+	DATA[7] = 1'b0;
+end 
+// DATA[ 6 ]
+initial
+begin
+	DATA[6] = 1'b0;
+end 
+// DATA[ 5 ]
+initial
+begin
+	DATA[5] = 1'b0;
+end 
+// DATA[ 4 ]
+initial
+begin
+	DATA[4] = 1'b1;
+end 
+// DATA[ 3 ]
+initial
+begin
+	DATA[3] = 1'b1;
+end 
+// DATA[ 2 ]
+initial
+begin
+	DATA[2] = 1'b0;
+end 
+// DATA[ 1 ]
+initial
+begin
+	DATA[1] = 1'b0;
+end 
+// DATA[ 0 ]
+initial
+begin
+	DATA[0] = 1'b1;
+end 
+
+// QUARZ
+always
+begin
+	QUARZ = 1'b0;
+	QUARZ = #5000 1'b1;
+	#5000;
+end 
+
+i2c_vlg_sample_tst tb_sample (
+	.DATA(DATA),
+	.QUARZ(QUARZ),
+	.sampler_tx(sampler)
+);
+
+i2c_vlg_check_tst tb_out(
+	.LED_0(LED_0),
+	.LED_1(LED_1),
+	.LED_2(LED_2),
+	.LED_3(LED_3),
+	.LED_5(LED_5),
+	.pin_name1(pin_name1),
+	.SCL(SCL),
+	.SDA(SDA),
+	.SSCL(SSCL),
+	.sampler_rx(sampler)
+);
+endmodule
+

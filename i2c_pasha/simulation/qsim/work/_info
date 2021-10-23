@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dG:\i2c\simulation\qsim
+vi2c
+Z1 I1g;R_ZA1EL@M<^<7`UlhF1
+Z2 V6SU2gdC[HQ9G@7Y4KD<QH0
+Z3 dC:\Users\pavel\OneDrive\Desktop\shit happens\interf\Interfaces\i2c\simulation\qsim
+Z4 w1634997861
+Z5 8i2c.vo
+Z6 Fi2c.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|i2c.vo|
+Z9 o-work work -O0
+!i10b 1
+Z10 !s100 BVDM:3;SJ9]PX5Fni[Nc00
+!s85 0
+Z11 !s108 1634997862.583000
+Z12 !s107 i2c.vo|
+!s101 -O0
+vi2c_vlg_check_tst
+!i10b 1
+Z13 !s100 8V:f1ONo8kbP`4odl2mLM0
+Z14 I4:gUT;g2RVaQFhPCA?Mg^3
+Z15 VF[=<h1aY`D6EJhMYM62`h0
+R3
+Z16 w1634997860
+Z17 8i2c.vt
+Z18 Fi2c.vt
+L0 59
+R7
+r1
+!s85 0
+31
+Z19 !s108 1634997862.700000
+Z20 !s107 i2c.vt|
+Z21 !s90 -work|work|i2c.vt|
+!s101 -O0
+R9
+vi2c_vlg_sample_tst
+!i10b 1
+Z22 !s100 S==8_ZmEm8NSl99YMMFf;1
+Z23 IP_S3VUGU=JD9COz_bgJd<1
+Z24 Vc><PT@?F;6cHQ<OfPj6<k0
+R3
+R16
+R17
+R18
+L0 29
+R7
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R9
+vi2c_vlg_vec_tst
+!i10b 1
+!s100 [XY<f]S7b8gFYg;B0h<a]0
+IdH3KYR4Kb7kP7DbjN[[>P0
+Z25 VG7leF=koEPmlj1YS<cFiE2
+R3
+R16
+R17
+R18
+Z26 L0 241
+R7
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R9
