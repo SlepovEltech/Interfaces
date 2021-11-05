@@ -1,5 +1,5 @@
 Simulator report for i2c
-Sat Oct 23 19:11:56 2021
+Sat Oct 23 21:44:26 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -46,40 +46,40 @@ applicable agreement for further details.
 ; Simulation Start Time       ; 0 ps         ;
 ; Simulation End Time         ; 15.0 us      ;
 ; Simulation Netlist Size     ; 304 nodes    ;
-; Simulation Coverage         ;      66.67 % ;
-; Total Number of Transitions ; 439560       ;
+; Simulation Coverage         ;      67.25 % ;
+; Total Number of Transitions ; 442552       ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Cyclone II   ;
 +-----------------------------+--------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Simulator Settings                                                                                                                                                       ;
-+--------------------------------------------------------------------------------------------+-------------------------------------------------------------+---------------+
-; Option                                                                                     ; Setting                                                     ; Default Value ;
-+--------------------------------------------------------------------------------------------+-------------------------------------------------------------+---------------+
-; Simulation mode                                                                            ; Functional                                                  ; Timing        ;
-; Start time                                                                                 ; 0 ns                                                        ; 0 ns          ;
-; Simulation results format                                                                  ; VWF                                                         ;               ;
-; Vector input source                                                                        ; C:/Users/79616/Documents/GitHub/Interfaces/i2c/Waveform.vwf ;               ;
-; Add pins automatically to simulation output waveforms                                      ; On                                                          ; On            ;
-; Check outputs                                                                              ; Off                                                         ; Off           ;
-; Report simulation coverage                                                                 ; On                                                          ; On            ;
-; Display complete 1/0 value coverage report                                                 ; On                                                          ; On            ;
-; Display missing 1-value coverage report                                                    ; On                                                          ; On            ;
-; Display missing 0-value coverage report                                                    ; On                                                          ; On            ;
-; Detect setup and hold time violations                                                      ; Off                                                         ; Off           ;
-; Detect glitches                                                                            ; Off                                                         ; Off           ;
-; Disable timing delays in Timing Simulation                                                 ; Off                                                         ; Off           ;
-; Generate Signal Activity File                                                              ; Off                                                         ; Off           ;
-; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                         ; Off           ;
-; Group bus channels in simulation results                                                   ; Off                                                         ; Off           ;
-; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                          ; On            ;
-; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                  ; INPUT_EDGE    ;
-; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                         ; Off           ;
-; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                         ;               ;
-; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                        ; Auto          ;
-+--------------------------------------------------------------------------------------------+-------------------------------------------------------------+---------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                             ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                           ; Default Value ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                                        ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                              ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                               ;               ;
+; Vector input source                                                                        ; C:/Users/79616/Documents/GitHub/Interfaces/i2c-artem/Waveform.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                                ; On            ;
+; Check outputs                                                                              ; Off                                                               ; Off           ;
+; Report simulation coverage                                                                 ; On                                                                ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                                ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                                ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                                ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                               ; Off           ;
+; Detect glitches                                                                            ; Off                                                               ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                               ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                               ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                               ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                               ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                                ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                        ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                               ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                               ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                              ; Auto          ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------------------+---------------+
 
 
 +----------------------+
@@ -94,13 +94,13 @@ Please use Quartus II 64-Bit to view the waveform report data.
 +-----------------------------------------------------+--------------+
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
-; Total coverage as a percentage                      ;      66.67 % ;
+; Total coverage as a percentage                      ;      67.25 % ;
 ; Total nodes checked                                 ; 304          ;
 ; Total output ports checked                          ; 345          ;
-; Total output ports with complete 1/0-value coverage ; 230          ;
-; Total output ports with no 1/0-value coverage       ; 109          ;
-; Total output ports with no 1-value coverage         ; 109          ;
-; Total output ports with no 0-value coverage         ; 115          ;
+; Total output ports with complete 1/0-value coverage ; 232          ;
+; Total output ports with no 1/0-value coverage       ; 107          ;
+; Total output ports with no 1-value coverage         ; 107          ;
+; Total output ports with no 0-value coverage         ; 113          ;
 +-----------------------------------------------------+--------------+
 
 
@@ -202,20 +202,23 @@ The following table displays output ports that toggle between 1 and 0 during sim
 ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~145                                            ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~145                                            ; out0             ;
 ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~146                                            ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~146                                            ; out0             ;
 ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|result_node[0]~0                                 ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|result_node[0]~0                                 ; out0             ;
+; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~150                                            ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~150                                            ; out0             ;
+; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~152                                            ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~152                                            ; out0             ;
 ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~153                                            ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~153                                            ; out0             ;
 ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~154                                            ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~154                                            ; out0             ;
 ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~155                                            ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~155                                            ; out0             ;
+; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~159                                            ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~159                                            ; out0             ;
+; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~161                                            ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~161                                            ; out0             ;
 ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~162                                            ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~162                                            ; out0             ;
 ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~163                                            ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~163                                            ; out0             ;
 ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~164                                            ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~164                                            ; out0             ;
 ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~167                                            ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~167                                            ; out0             ;
 ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~168                                            ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~168                                            ; out0             ;
 ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~169                                            ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~169                                            ; out0             ;
-; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~170                                            ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~170                                            ; out0             ;
+; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~175                                            ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~175                                            ; out0             ;
 ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~176                                            ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~176                                            ; out0             ;
-; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~179                                            ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~179                                            ; out0             ;
+; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~184                                            ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~184                                            ; out0             ;
 ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~185                                            ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~185                                            ; out0             ;
-; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~188                                            ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~188                                            ; out0             ;
 ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~189                                            ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~189                                            ; out0             ;
 ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~190                                            ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~190                                            ; out0             ;
 ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~192                                            ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~192                                            ; out0             ;
@@ -237,11 +240,10 @@ The following table displays output ports that toggle between 1 and 0 during sim
 ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~217                                            ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~217                                            ; out0             ;
 ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~218                                            ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~218                                            ; out0             ;
 ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~220                                            ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~220                                            ; out0             ;
-; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~221                                            ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~221                                            ; out0             ;
+; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~226                                            ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~226                                            ; out0             ;
 ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~227                                            ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~227                                            ; out0             ;
-; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~230                                            ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~230                                            ; out0             ;
+; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~235                                            ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~235                                            ; out0             ;
 ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~236                                            ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~236                                            ; out0             ;
-; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~239                                            ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~239                                            ; out0             ;
 ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~240                                            ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~240                                            ; out0             ;
 ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~241                                            ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~241                                            ; out0             ;
 ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~243                                            ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~243                                            ; out0             ;
@@ -402,18 +404,16 @@ The following table displays output ports that do not toggle to 1 during simulat
 ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~117                                          ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~117                                          ; out0             ;
 ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~141                                          ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~141                                          ; out0             ;
 ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~148                                          ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~148                                          ; out0             ;
-; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~150                                          ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~150                                          ; out0             ;
-; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~152                                          ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~152                                          ; out0             ;
 ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~157                                          ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~157                                          ; out0             ;
-; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~159                                          ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~159                                          ; out0             ;
-; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~161                                          ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~161                                          ; out0             ;
 ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~166                                          ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~166                                          ; out0             ;
-; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~175                                          ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~175                                          ; out0             ;
-; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~184                                          ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~184                                          ; out0             ;
+; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~170                                          ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~170                                          ; out0             ;
+; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~179                                          ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~179                                          ; out0             ;
+; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~188                                          ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~188                                          ; out0             ;
 ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~200                                          ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~200                                          ; out0             ;
 ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~209                                          ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~209                                          ; out0             ;
-; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~226                                          ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~226                                          ; out0             ;
-; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~235                                          ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~235                                          ; out0             ;
+; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~221                                          ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~221                                          ; out0             ;
+; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~230                                          ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~230                                          ; out0             ;
+; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~239                                          ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~239                                          ; out0             ;
 ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~251                                          ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~251                                          ; out0             ;
 ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~260                                          ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~260                                          ; out0             ;
 ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~270                                          ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~270                                          ; out0             ;
@@ -526,18 +526,16 @@ The following table displays output ports that do not toggle to 0 during simulat
 ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~117                                          ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~117                                          ; out0             ;
 ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~141                                          ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~141                                          ; out0             ;
 ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~148                                          ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~148                                          ; out0             ;
-; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~150                                          ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~150                                          ; out0             ;
-; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~152                                          ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~152                                          ; out0             ;
 ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~157                                          ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~157                                          ; out0             ;
-; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~159                                          ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~159                                          ; out0             ;
-; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~161                                          ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~161                                          ; out0             ;
 ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~166                                          ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~166                                          ; out0             ;
-; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~175                                          ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~175                                          ; out0             ;
-; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~184                                          ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~184                                          ; out0             ;
+; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~170                                          ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~170                                          ; out0             ;
+; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~179                                          ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~179                                          ; out0             ;
+; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~188                                          ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~188                                          ; out0             ;
 ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~200                                          ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~200                                          ; out0             ;
 ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~209                                          ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~209                                          ; out0             ;
-; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~226                                          ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~226                                          ; out0             ;
-; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~235                                          ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~235                                          ; out0             ;
+; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~221                                          ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~221                                          ; out0             ;
+; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~230                                          ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~230                                          ; out0             ;
+; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~239                                          ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~239                                          ; out0             ;
 ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~251                                          ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~251                                          ; out0             ;
 ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~260                                          ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~260                                          ; out0             ;
 ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~270                                          ; |i2c|lpm_mux0:inst21|lpm_mux:LPM_MUX_component|mux_l4e:auto_generated|_~270                                          ; out0             ;
@@ -598,19 +596,19 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Simulator
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sat Oct 23 19:11:56 2021
+    Info: Processing started: Sat Oct 23 21:44:25 2021
 Info: Command: quartus_sim --simulation_results_format=VWF i2c -c i2c
-Info (324025): Using vector source file "C:/Users/79616/Documents/GitHub/Interfaces/i2c/Waveform.vwf"
+Info (324025): Using vector source file "C:/Users/79616/Documents/GitHub/Interfaces/i2c-artem/Waveform.vwf"
 Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info (310002): Simulation partitioned into 1 sub-simulations
-Info (328053): Simulation coverage is      66.67 %
-Info (328052): Number of transitions in simulation is 439560
+Info (328053): Simulation coverage is      67.25 %
+Info (328052): Number of transitions in simulation is 442552
 Info (324045): Vector file i2c.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
 Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4441 megabytes
-    Info: Processing ended: Sat Oct 23 19:11:56 2021
-    Info: Elapsed time: 00:00:00
+    Info: Processing ended: Sat Oct 23 21:44:26 2021
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

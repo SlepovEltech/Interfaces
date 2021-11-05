@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="i2c-new">
+		<CBX_INST_ENTRY INSTANCE_NAME="|i2c-new|lpm_counter1:inst4|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_ljj.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|i2c-new|lpm_decode0:inst16|lpm_decode:LPM_DECODE_component" CBX_FILE_NAME="decode_h8f.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|i2c-new|lpm_constant0:inst2|lpm_constant:LPM_CONSTANT_component" CBX_FILE_NAME="lpm_constant_3e6.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|i2c-new|lpm_constant1:inst3|lpm_constant:LPM_CONSTANT_component" CBX_FILE_NAME="lpm_constant_4e6.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|i2c-new|lpm_counter0:inst|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_35k.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|i2c-new|lpm_counter2:inst6|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_1jk.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|i2c-new|lpm_counter3:inst10|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_etj.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|i2c-new|lpm_mux0:inst13|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_q4e.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

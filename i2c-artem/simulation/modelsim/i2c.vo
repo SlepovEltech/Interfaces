@@ -16,7 +16,7 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
 
-// DATE "10/23/2021 19:11:47"
+// DATE "10/23/2021 19:17:34"
 
 // 
 // Device: Altera EP2C5Q208C8 Package PQFP208
@@ -220,10 +220,10 @@ wire \inst22|LPM_DECODE_component|auto_generated|w_anode229w[3]~0_combout ;
 wire \inst23~regout ;
 wire [3:0] \inst22|LPM_DECODE_component|auto_generated|w_anode229w ;
 wire [11:0] \inst9|LPM_COUNTER_component|auto_generated|safe_q ;
+wire [12:0] \inst4|LPM_COUNTER_component|auto_generated|safe_q ;
 wire [7:0] \DATA~combout ;
 wire [11:0] \inst16|LPM_COUNTER_component|auto_generated|safe_q ;
 wire [4:0] \inst5|LPM_COUNTER_component|auto_generated|safe_q ;
-wire [12:0] \inst4|LPM_COUNTER_component|auto_generated|safe_q ;
 
 
 // Location: LCFF_X22_Y12_N17

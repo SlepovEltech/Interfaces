@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "10/23/2021 18:49:02"
+// Generated on "10/23/2021 19:16:06"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    i2c
 // 
@@ -316,8 +316,8 @@ end
 always
 begin
 	QUARZ = 1'b0;
-	QUARZ = #5000 1'b1;
-	#5000;
+	QUARZ = #500 1'b1;
+	#500;
 end 
 
 i2c_vlg_sample_tst tb_sample (
