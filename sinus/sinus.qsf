@@ -48,4 +48,32 @@ set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
 set_global_assignment -name USE_CONFIGURATION_DEVICE ON
 set_global_assignment -name STRATIX_CONFIGURATION_DEVICE EPCS1
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
+set_global_assignment -name VECTOR_OUTPUT_FORMAT VWF
+set_global_assignment -name BDF_FILE spi_2_DAC_APPROVED/lab1.bdf
 set_global_assignment -name BDF_FILE sinus.bdf
+set_global_assignment -name MIF_FILE sinus.mif
+set_global_assignment -name QIP_FILE lpm_counter0.qip
+set_global_assignment -name QIP_FILE my_lpm_rom.qip
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name QIP_FILE spi_2_DAC_APPROVED/lpm_counter5.qip
+set_global_assignment -name QIP_FILE spi_2_DAC_APPROVED/lpm_counter6.qip
+set_global_assignment -name QIP_FILE spi_2_DAC_APPROVED/lpm_counter7.qip
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "F:/interfaces_08.11/sinus/Waveform.vwf"
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_location_assignment PIN_132 -to QUARZ
+set_location_assignment PIN_31 -to SCK
+set_location_assignment PIN_30 -to CS
+set_location_assignment PIN_33 -to MOSI
+set_location_assignment PIN_34 -to LDAC
+set_location_assignment PIN_35 -to CLR
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name CDF_FILE output_files/Chain1.cdf
