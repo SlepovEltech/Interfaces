@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="sinus">
+		<CBX_INST_ENTRY INSTANCE_NAME="|sinus|lab1:inst|lpm_constant0:instt|lpm_constant:LPM_CONSTANT_component" CBX_FILE_NAME="lpm_constant_4e6.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sinus|lab1:inst|lpm_constant1:inst1f|lpm_constant:LPM_CONSTANT_component" CBX_FILE_NAME="lpm_constant_3e6.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sinus|lab1:inst|lpm_counter1:inst9|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_okh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sinus|lab1:inst|lpm_counter2:inst13|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_qgj.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sinus|lab1:inst|lpm_mux0:inst8|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_o4e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sinus|lab1:inst|lpm_counter4:inst7|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_i3i.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sinus|lpm_constant0:inst10|lpm_constant:LPM_CONSTANT_component" CBX_FILE_NAME="lpm_constant_4e6.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sinus|lpm_counter5:inst6|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_5mh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sinus|my_lpm_rom:inst4|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_f971.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sinus|lab1:inst|lpm_counter0:inst|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_32k.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sinus|lab1:inst|lpm_counter3:inst1|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_nrj.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|sinus|lpm_counter6:inst2|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_43j.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

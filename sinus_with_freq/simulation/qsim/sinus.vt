@@ -1,0 +1,397 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "11/08/2021 12:18:19"
+                                                                        
+// Verilog Self-Checking Test Bench (with test vectors) for design :    sinus
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module sinus_vlg_sample_tst(
+	QUARZ,
+	sampler_tx
+);
+input  QUARZ;
+output sampler_tx;
+
+reg sample;
+time current_time;
+always @(QUARZ)
+                                                                                
+begin                                                 
+ if ($realtime > 0)                                   
+ begin                                                
+	if ($realtime == 0 || $realtime != current_time)  
+	begin									          
+		if (sample === 1'bx)                          
+			sample = 0;                               
+		else                                          
+			sample = ~sample;                         
+	end										          
+	current_time = $realtime;					      
+ end                                                  
+end                                                   
+
+assign sampler_tx = sample;
+endmodule
+
+module sinus_vlg_check_tst (
+	CLR,
+	CS,
+	LDAC,
+	MEM,
+	MOSI,
+	SCK,
+	sampler_rx
+);
+input  CLR;
+input  CS;
+input  LDAC;
+input [9:0] MEM;
+input  MOSI;
+input  SCK;
+input sampler_rx;
+
+reg  CLR_expected;
+reg  CS_expected;
+reg  LDAC_expected;
+reg [9:0] MEM_expected;
+reg  MOSI_expected;
+reg  SCK_expected;
+
+reg  CLR_prev;
+reg  CS_prev;
+reg  LDAC_prev;
+reg [9:0] MEM_prev;
+reg  MOSI_prev;
+reg  SCK_prev;
+
+reg [9:0] MEM_expected_prev;
+
+reg [9:0] last_MEM_exp;
+
+reg trigger;
+
+integer i;
+integer nummismatches;
+
+reg [1:6] on_first_change ;
+
+
+initial
+begin
+trigger = 0;
+i = 0;
+nummismatches = 0;
+on_first_change = 6'b1;
+end
+
+// update real /o prevs
+
+always @(trigger)
+begin
+	CLR_prev = CLR;
+	CS_prev = CS;
+	LDAC_prev = LDAC;
+	MEM_prev = MEM;
+	MOSI_prev = MOSI;
+	SCK_prev = SCK;
+end
+
+// update expected /o prevs
+
+always @(trigger)
+begin
+	MEM_expected_prev = MEM_expected;
+end
+
+
+// expected MEM[ 9 ]
+initial
+begin
+	MEM_expected[9] = 1'bX;
+	MEM_expected[9] = #999000 1'b0;
+end 
+// expected MEM[ 8 ]
+initial
+begin
+	MEM_expected[8] = 1'bX;
+	MEM_expected[8] = #999000 1'b0;
+end 
+// expected MEM[ 7 ]
+initial
+begin
+	MEM_expected[7] = 1'bX;
+	MEM_expected[7] = #999000 1'b0;
+end 
+// expected MEM[ 6 ]
+initial
+begin
+	MEM_expected[6] = 1'bX;
+	MEM_expected[6] = #999000 1'b0;
+end 
+// expected MEM[ 5 ]
+initial
+begin
+	MEM_expected[5] = 1'bX;
+	MEM_expected[5] = #999000 1'b0;
+end 
+// expected MEM[ 4 ]
+initial
+begin
+	MEM_expected[4] = 1'bX;
+	MEM_expected[4] = #999000 1'b0;
+end 
+// expected MEM[ 3 ]
+initial
+begin
+	MEM_expected[3] = 1'bX;
+	MEM_expected[3] = #999000 1'b0;
+end 
+// expected MEM[ 2 ]
+initial
+begin
+	MEM_expected[2] = 1'bX;
+	MEM_expected[2] = #999000 1'b0;
+end 
+// expected MEM[ 1 ]
+initial
+begin
+	MEM_expected[1] = 1'bX;
+	MEM_expected[1] = #999000 1'b0;
+end 
+// expected MEM[ 0 ]
+initial
+begin
+	MEM_expected[0] = 1'bX;
+	MEM_expected[0] = #999000 1'b0;
+end 
+// generate trigger
+always @(CLR_expected or CLR or CS_expected or CS or LDAC_expected or LDAC or MEM_expected or MEM or MOSI_expected or MOSI or SCK_expected or SCK)
+begin
+	trigger <= ~trigger;
+end
+
+always @(posedge sampler_rx or negedge sampler_rx)
+begin
+`ifdef debug_tbench
+	$display("Scanning pattern %d @time = %t",i,$realtime );
+	i = i + 1;
+	$display("| expected CLR = %b | expected CS = %b | expected LDAC = %b | expected MEM = %b | expected MOSI = %b | expected SCK = %b | ",CLR_expected_prev,CS_expected_prev,LDAC_expected_prev,MEM_expected_prev,MOSI_expected_prev,SCK_expected_prev);
+	$display("| real CLR = %b | real CS = %b | real LDAC = %b | real MEM = %b | real MOSI = %b | real SCK = %b | ",CLR_prev,CS_prev,LDAC_prev,MEM_prev,MOSI_prev,SCK_prev);
+`endif
+	if (
+		( MEM_expected_prev[0] !== 1'bx ) && ( MEM_prev[0] !== MEM_expected_prev[0] )
+		&& ((MEM_expected_prev[0] !== last_MEM_exp[0]) ||
+			on_first_change[4])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port MEM[0] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", MEM_expected_prev);
+		$display ("     Real value = %b", MEM_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[4] = 1'b0;
+		last_MEM_exp[0] = MEM_expected_prev[0];
+	end
+	if (
+		( MEM_expected_prev[1] !== 1'bx ) && ( MEM_prev[1] !== MEM_expected_prev[1] )
+		&& ((MEM_expected_prev[1] !== last_MEM_exp[1]) ||
+			on_first_change[4])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port MEM[1] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", MEM_expected_prev);
+		$display ("     Real value = %b", MEM_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[4] = 1'b0;
+		last_MEM_exp[1] = MEM_expected_prev[1];
+	end
+	if (
+		( MEM_expected_prev[2] !== 1'bx ) && ( MEM_prev[2] !== MEM_expected_prev[2] )
+		&& ((MEM_expected_prev[2] !== last_MEM_exp[2]) ||
+			on_first_change[4])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port MEM[2] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", MEM_expected_prev);
+		$display ("     Real value = %b", MEM_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[4] = 1'b0;
+		last_MEM_exp[2] = MEM_expected_prev[2];
+	end
+	if (
+		( MEM_expected_prev[3] !== 1'bx ) && ( MEM_prev[3] !== MEM_expected_prev[3] )
+		&& ((MEM_expected_prev[3] !== last_MEM_exp[3]) ||
+			on_first_change[4])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port MEM[3] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", MEM_expected_prev);
+		$display ("     Real value = %b", MEM_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[4] = 1'b0;
+		last_MEM_exp[3] = MEM_expected_prev[3];
+	end
+	if (
+		( MEM_expected_prev[4] !== 1'bx ) && ( MEM_prev[4] !== MEM_expected_prev[4] )
+		&& ((MEM_expected_prev[4] !== last_MEM_exp[4]) ||
+			on_first_change[4])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port MEM[4] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", MEM_expected_prev);
+		$display ("     Real value = %b", MEM_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[4] = 1'b0;
+		last_MEM_exp[4] = MEM_expected_prev[4];
+	end
+	if (
+		( MEM_expected_prev[5] !== 1'bx ) && ( MEM_prev[5] !== MEM_expected_prev[5] )
+		&& ((MEM_expected_prev[5] !== last_MEM_exp[5]) ||
+			on_first_change[4])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port MEM[5] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", MEM_expected_prev);
+		$display ("     Real value = %b", MEM_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[4] = 1'b0;
+		last_MEM_exp[5] = MEM_expected_prev[5];
+	end
+	if (
+		( MEM_expected_prev[6] !== 1'bx ) && ( MEM_prev[6] !== MEM_expected_prev[6] )
+		&& ((MEM_expected_prev[6] !== last_MEM_exp[6]) ||
+			on_first_change[4])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port MEM[6] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", MEM_expected_prev);
+		$display ("     Real value = %b", MEM_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[4] = 1'b0;
+		last_MEM_exp[6] = MEM_expected_prev[6];
+	end
+	if (
+		( MEM_expected_prev[7] !== 1'bx ) && ( MEM_prev[7] !== MEM_expected_prev[7] )
+		&& ((MEM_expected_prev[7] !== last_MEM_exp[7]) ||
+			on_first_change[4])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port MEM[7] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", MEM_expected_prev);
+		$display ("     Real value = %b", MEM_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[4] = 1'b0;
+		last_MEM_exp[7] = MEM_expected_prev[7];
+	end
+	if (
+		( MEM_expected_prev[8] !== 1'bx ) && ( MEM_prev[8] !== MEM_expected_prev[8] )
+		&& ((MEM_expected_prev[8] !== last_MEM_exp[8]) ||
+			on_first_change[4])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port MEM[8] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", MEM_expected_prev);
+		$display ("     Real value = %b", MEM_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[4] = 1'b0;
+		last_MEM_exp[8] = MEM_expected_prev[8];
+	end
+	if (
+		( MEM_expected_prev[9] !== 1'bx ) && ( MEM_prev[9] !== MEM_expected_prev[9] )
+		&& ((MEM_expected_prev[9] !== last_MEM_exp[9]) ||
+			on_first_change[4])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port MEM[9] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", MEM_expected_prev);
+		$display ("     Real value = %b", MEM_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[4] = 1'b0;
+		last_MEM_exp[9] = MEM_expected_prev[9];
+	end
+
+	trigger <= ~trigger;
+end
+initial 
+
+begin 
+$timeformat(-12,3," ps",6);
+#10000000;
+if (nummismatches > 0)
+	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
+else
+	$display ("Simulation passed !");
+$finish;
+end 
+endmodule
+
+module sinus_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg QUARZ;
+// wires                                               
+wire CLR;
+wire CS;
+wire LDAC;
+wire [9:0] MEM;
+wire MOSI;
+wire SCK;
+
+wire sampler;                             
+
+// assign statements (if any)                          
+sinus i1 (
+// port map - connection between master ports and signals/registers   
+	.CLR(CLR),
+	.CS(CS),
+	.LDAC(LDAC),
+	.MEM(MEM),
+	.MOSI(MOSI),
+	.QUARZ(QUARZ),
+	.SCK(SCK)
+);
+
+// QUARZ
+always
+begin
+	QUARZ = 1'b0;
+	QUARZ = #5000 1'b1;
+	#5000;
+end 
+
+sinus_vlg_sample_tst tb_sample (
+	.QUARZ(QUARZ),
+	.sampler_tx(sampler)
+);
+
+sinus_vlg_check_tst tb_out(
+	.CLR(CLR),
+	.CS(CS),
+	.LDAC(LDAC),
+	.MEM(MEM),
+	.MOSI(MOSI),
+	.SCK(SCK),
+	.sampler_rx(sampler)
+);
+endmodule
+
